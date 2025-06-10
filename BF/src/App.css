@@ -9,45 +9,35 @@ a {
   text-decoration: none;
 }
 
+.center {
+  text-align: center;
+}
+
+.banner {
+  height: 50vh;
+}
+
 .footer {
   margin-top: 100px;
   display: flex;
   flex-wrap: wrap;
-  height: 200px;
   width: 100%;
   bottom: 0;
-}
-
-.footer-left {
-  padding: 16px;
-  width: 30%;
-  height: 100%;
-  left: 0;
-}
-
-.footer-right {
-  background-color: var(--primary);
-  color: var(--light);
   text-align: center;
-  padding: 16px;
-  width: 70%;
-  height: 100%;
-  right: 0;
+  border-top: solid 2px var(--primary-dark);
 }
 
-.footer-shop {
-  /* */
+.footer-item {
+  padding: 16px;
+  width: 33%;
+  height: 100%;
 }
 
 @media only screen and (max-width: 440px) {
 
-  .footer-left {
+  .footer-item {
     width: 100%;
-  }
-
-  .footer-right {
-    width: 100%;
-
+    margin: 50px;
   }
 }
 

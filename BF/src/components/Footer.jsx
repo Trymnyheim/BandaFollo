@@ -14,25 +14,24 @@ function Footer() {
     return (
         <>
             <div className="footer">
-                <div className="footer-left">
+                <div className="footer-item">
                     <Navbar.Brand href="#home">
                         <img style={logoStyle} src="./src/assets/logo.png"/>
                     </Navbar.Brand>
-                    <p>Oppegårdveien 2B
-                        1423 SKI
-                    </p>
+                    <p>Oppegårdveien 2B<br/>1423 SKI</p>
                     <p>+47 64 87 70 00</p>
                     <p>post@bandafollo.no</p>
                 </div>
-                <div className="footer-right">
+                <div className="footer-item">
                     <div className="shop" onClick={handleShowShop} style={{cursor:'pointer'}}>
                         <img src="./src/assets/cart.png"/>
-                        <p>I bandakjeden sin nettbutikk finner du et stort utvalg av våre produkter, inkludert varer på blårespept.</p>
+                        <p>I bandakjeden sin nettbutikk finner du et stort utvalg av våre produkter, inkludert varer på blåresept.</p>
                         <Shop showShop={showShop} handleCloseShop={handleCloseShop}/>
                     </div>
-                    <div>
-
-                    </div>
+                </div>
+                <div className="footer-item">
+                    <img style={logoStyle} src="./src/assets/banda_logo.webp"/>
+                    <p>Medlem av Bandakjeden</p>
                 </div>
 
             </div>
