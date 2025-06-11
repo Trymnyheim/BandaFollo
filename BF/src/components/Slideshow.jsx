@@ -21,7 +21,7 @@ function Slideshow(props) {
         position: 'absolute',
         top: 0,
         left: 0,
-        transition: 'opacity 1s ease-in-out',
+        transition: 'opacity 2s ease-in-out',
         opacity: 0,
     };
 
@@ -35,7 +35,7 @@ function Slideshow(props) {
             setCurrentIndex((prevIndex) =>
                 (prevIndex + 1) % props.images.length
             );
-        }, 3000); // Change every 3 seconds
+        }, props.time); // Change every 3 seconds
 
         return () => clearInterval(interval);
     }, [props.images.length]);

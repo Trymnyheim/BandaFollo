@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Shop from '../components/Shop.jsx';
 import { useState } from 'react';
+import BackToTop from './BackToTop.jsx';
 
 const logoStyle = {
     height: '50px'
