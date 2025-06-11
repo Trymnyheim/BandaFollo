@@ -5,6 +5,9 @@ import Kompresjonstoy from '../pages/produkter/Kompresjonstoy.jsx'
 import Brystproteser from '../pages/produkter/Brystproteser.jsx'
 import Brokkbelter from '../pages/produkter/Brokkbelter.jsx'
 import Saarprodukter from '../pages/produkter/Saarprodukter.jsx'
+import Saalerogsko from '../pages/produkter/Saalerogsko.jsx'
+import Stottebandasjer from '../pages/produkter/Stottebandasjer.jsx'
+
 import BackToTop from '../components/BackToTop.jsx';
 
 
@@ -36,18 +39,36 @@ function Produkter() {
             image: "./src/assets/test.jpg",
             page: Saarprodukter,
             url: "/produkter#saarprodukter"
-        }
+        },
+        {
+            title: "Støttebandaser/ortoser",
+            image: "./src/assets/test.jpg",
+            page: Stottebandasjer,
+            url: "/produkter#stottebandasjer"
+        },
+        {
+            title: "Såler og sko",
+            image: "./src/assets/test.jpg",
+            page: Saalerogsko,
+            url: "/produkter#saalerogsko"
+        },
+
 
     ]
 
+    const style = {
+        display: "grid",
+        gap: "50px"
+
+    }
 
     return (
-        <>
-            <NavCardContainer items={produkter} />
+        <div style={style}>
+            <NavCardContainer items={produkter} setSelectedPage={setSelectedPage} />
             <BackToTop text="Meny" />
             <SelectedPage />
             
-        </>
+        </div>
     )
 }
 

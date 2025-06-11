@@ -1,11 +1,12 @@
 import NavCard from './NavCard.jsx'
 
-function NavCardContainer({items}) {
+function NavCardContainer({items, setSelectedPage}) {
 
     const style = {
         display: "flex",
         flexWrap: "wrap",
-        justifyContent: "center"
+        justifyContent: "center",
+        gap: "20px"
     }
 
     return (

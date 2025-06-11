@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import { HashLink } from 'react-router-hash-link';
 
 function scrollWithOffset(el) {
-    const yOffset = -76; // height of navbar
+    const yOffset = -76-50-38;
     const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
     window.scrollTo({ top: y, behavior: 'smooth' });
 }

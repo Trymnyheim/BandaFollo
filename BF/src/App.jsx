@@ -16,16 +16,18 @@ function App() {
   return (
     <>
       <Navigation />
-      <BrowserRouter>
-        <Routes>
-          <Route index path='/' element={<Home />} />
-          <Route path='/omoss' element={<OmOss />} />
-          <Route path='/kontakt' element={<Kontakt />} />
-          <Route path='/produkter' element={<Produkter />} />
-          <Route path='/tjenester' element={<Tjenester />} />
-          <Route path='/blaaresept' element={<BlaaResept />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="body">
+        <BrowserRouter>
+          <Routes>
+            <Route index path='/' element={<Home />} />
+            <Route path='/omoss' element={<OmOss />} />
+            <Route path='/kontakt' element={<Kontakt />} />
+            <Route path='/produkter' element={<Produkter />} />
+            <Route path='/tjenester' element={<Tjenester />} />
+            <Route path='/blaaresept' element={<BlaaResept />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
       <Footer />
     </>
   )
