@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <Navigation />
-      <div className="body">
+      <div className="content">
         <BrowserRouter>
           <Routes>
             <Route index path='/' element={<Home />} />
