@@ -1,6 +1,7 @@
 import Icons from '../components/Icons.jsx';
 import Slideshow from '../components/Slideshow.jsx';
 import Campaign from '../components/Campaign.jsx';
+import Title from '../components/Title.jsx';
 
 function Home() {
 
@@ -17,14 +18,17 @@ function Home() {
     }
 
     return (
-        <>
+        <div>
             <div className="banner">
-                <Slideshow images={images} time={10000} />
+                <Slideshow images={images} time={10000} overlay={<Title />}/>
             </div>
-            <p>Din lokale bandagist</p>
-            <Campaign campaign={campaign} />
+            <br/>
             <Icons />
-        </>
+            <div className="container">
+                <Campaign campaign={campaign} />
+                <Campaign campaign={campaign} />
+            </div>
+        </div>
     )
 }
 

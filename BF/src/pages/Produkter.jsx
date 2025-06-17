@@ -18,7 +18,7 @@ function Produkter() {
     const produkter = [
         {
             title: "Kompresjonstøy/strømper",
-            image: "./src/assets/test.jpg",
+            image: "./src/assets/produkter/stromper.jpg",
             page: Kompresjonstoy,
             url: "/produkter#kompresjonstoy"
         },
@@ -67,7 +67,6 @@ function Produkter() {
             <NavCardContainer items={produkter} setSelectedPage={setSelectedPage} />
             <BackToTop text="Meny" />
             <SelectedPage />
-            
         </div>
     )
 }

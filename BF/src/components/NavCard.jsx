@@ -11,6 +11,11 @@ const style = {
   width: "20rem"
 }
 
+const imageStyle = {
+  height: "13rem",
+  objectFit: "cover"
+}
+
 function NavCard(props) {
   return (
     <div style={style} >
@@ -18,7 +23,7 @@ function NavCard(props) {
           <Card onClick={props.select}>
               <Card.Body>
                   <Card.Title>{props.title}</Card.Title>
-                  <Card.Img variant="top" src={props.image} />
+                  <Card.Img style={imageStyle} variant="top" src={props.image} />
                   <Card.Text>
                   &rarr;
                   </Card.Text>

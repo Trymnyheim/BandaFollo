@@ -30,6 +30,17 @@ function Slideshow(props) {
         opacity: 1,
     };
 
+    const overlayStyle = {
+        position: 'absolute',
+        width: '100%',
+        height: '100%',
+        pointerEvents: 'none', // allows clicks to pass through if needed
+        zIndex: 10, 
+        display: 'flex',
+        alignItems: 'center',     // vertical centering
+        justifyContent: 'center',
+    }
+
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) =>
@@ -53,6 +64,9 @@ function Slideshow(props) {
                     }}
                 />
             ))}
+            <div style={overlayStyle}>
+                {props.overlay}
+            </div>
         </div>
     );
 }
