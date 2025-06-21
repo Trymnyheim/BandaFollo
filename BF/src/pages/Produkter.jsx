@@ -7,15 +7,56 @@ import Brokkbelter from '../pages/produkter/Brokkbelter.jsx'
 import Saarprodukter from '../pages/produkter/Saarprodukter.jsx'
 import Saalerogsko from '../pages/produkter/Saalerogsko.jsx'
 import Stottebandasjer from '../pages/produkter/Stottebandasjer.jsx'
-
+import Stomi from '../pages/blaaresept/Stomi.jsx'
+import Kateter from '../pages/blaaresept/Kateter.jsx'
+import Inkontinens from '../pages/blaaresept/Inkontinens.jsx'
+import Ernaering from '../pages/blaaresept/Ernaering.jsx'
+import Hoftebeskytter from '../pages/blaaresept/Hoftebeskytter.jsx'
+import Saarbehandling from '../pages/blaaresept/Saarbehandling.jsx'
 import BackToTop from '../components/BackToTop.jsx';
 
 
 function Produkter() {
 
-    const [SelectedPage, setSelectedPage] = useState(() => Kompresjonstoy);
+    const [SelectedPage, setSelectedPage] = useState(() => () => null);
 
     const produkter = [
+        {
+            title: "Stomi",
+            image: "./src/assets/test.jpg",
+            page: Stomi,
+            url: "/produkter#stomi"
+        },
+        {
+            title: "Kateter",
+            image: "./src/assets/test.jpg",
+            page: Kateter,
+            url: "/produkter#kateter"
+        },
+        {
+            title: "Inkontinens",
+            image: "./src/assets/test.jpg",
+            page: Inkontinens,
+            url: "/produkter#inkontinens"
+        },
+        {
+            title: "Ernæring",
+            image: "./src/assets/test.jpg",
+            page: Ernaering,
+            url: "/produkter#ernaering"
+        },
+        {
+            title: "Hoftebeskytter",
+            image: "./src/assets/test.jpg",
+            page: Hoftebeskytter,
+            url: "/produkter#hoftebeskytter"
+        },
+        {
+            title: "Sårbehandling",
+            image: "./src/assets/test.jpg",
+            page: Saarbehandling,
+            url: "/produkter#saarbehandling"
+        },
         {
             title: "Kompresjonstøy/strømper",
             image: "./src/assets/produkter/stromper.jpg",
@@ -64,6 +105,10 @@ function Produkter() {
 
     return (
         <div style={style}>
+            <div className="center">
+                <h1>Våre produkter</h1>
+                <h2>For din helse, komfort og medisinske behov</h2>
+            </div>
             <NavCardContainer items={produkter} setSelectedPage={setSelectedPage} />
             <BackToTop text="Meny" />
             <SelectedPage />

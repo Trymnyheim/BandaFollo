@@ -5,10 +5,6 @@ import Shop from '../components/Shop.jsx';
 import { useState } from 'react';
 import BackToTop from './BackToTop.jsx';
 
-const logoStyle = {
-    height: '50px'
-}
-
 function Navigation(openShop) {
 
     const [showShop, setShowShop] = useState(false);
@@ -20,7 +16,7 @@ function Navigation(openShop) {
             <Navbar expand="md" sticky="top" bg="light" data-bs-theme="light">
                 <Container>
                     <Navbar.Brand href="/">
-                        <img style={logoStyle} src="./src/assets/logo.png"/>
+                        <img className="logo" src="./src/assets/logo.png"/>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse>
