@@ -22,7 +22,7 @@ function Stomi() {
     return (
         <div id="stomi">
             <Produkt produkt={produkt} />
-            <div className="container padding">
+            <div className="container padding" style={{justifyContent: 'center', gap: '48px'}}>
                 <ImageCard
                     image="/src/assets/"
                     title="Vi har kompetanse"
@@ -31,7 +31,7 @@ function Stomi() {
                         text: "Les mer om vår kompetanse",
                         action: () => {
                             window.scrollTo({ top: 0, behavior: 'smooth' });
-                            navigate('/kontakt');
+                            navigate('/omoss');
                         }
                     }}
                 />
