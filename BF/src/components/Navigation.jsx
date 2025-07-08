@@ -29,7 +29,7 @@ function Navigation(openShop) {
             <Navbar expanded={expanded} onToggle={setExpanded} expand="lg" sticky="top" bg="light" data-bs-theme="light">
                 <Container>
                     <Navbar.Brand href="/">
-                        <img className="logo" src="./src/assets/logo.png"/>
+                        <img className="logo" src="/src/assets/logo/bandafollo.svg"/>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                     <Navbar.Collapse>

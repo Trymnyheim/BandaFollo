@@ -7,12 +7,12 @@ import Brokkbelter from '../pages/produkter/Brokkbelter.jsx'
 import Saarprodukter from '../pages/produkter/Saarprodukter.jsx'
 import Saalerogsko from '../pages/produkter/Saalerogsko.jsx'
 import Stottebandasjer from '../pages/produkter/Stottebandasjer.jsx'
-import Stomi from '../pages/blaaresept/Stomi.jsx'
-import Kateter from '../pages/blaaresept/Kateter.jsx'
-import Inkontinens from '../pages/blaaresept/Inkontinens.jsx'
-import Ernaering from '../pages/blaaresept/Ernaering.jsx'
-import Hoftebeskytter from '../pages/blaaresept/Hoftebeskytter.jsx'
-import Saarbehandling from '../pages/blaaresept/Saarbehandling.jsx'
+import Stomi from '../pages/produkter/Stomi.jsx'
+import Kateter from '../pages/produkter/Kateter.jsx'
+import Inkontinens from '../pages/produkter/Inkontinens.jsx'
+import Ernaering from '../pages/produkter/Ernaering.jsx'
+import Hoftebeskytter from '../pages/produkter/Hoftebeskytter.jsx'
+import Saarbehandling from '../pages/produkter/Saarbehandling.jsx'
 import BackToTop from '../components/BackToTop.jsx';
 
 
@@ -89,7 +89,7 @@ function Produkter() {
         },
         {
             title: "Såler og sko",
-            image: "./src/assets/test.jpg",
+            image: "./src/assets/produkter/saalerogsko/sandal.jpg",
             page: Saalerogsko,
             url: "/produkter#saalerogsko"
         },

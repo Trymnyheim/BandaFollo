@@ -1,10 +1,16 @@
+import Produkt from '/src/components/Produkt.jsx'
 
 function Brokkbelter() {
 
+    const produkt = {
+        title: "Tittel",
+        about: "",
+        subProducts: [],
+        images: []
+    }
+
     return (
-        <div id="brokkbelter">
-            <h1>Brokkbelte</h1>
-        </div>
+        <Produkt produkt={produkt} />
     )
 }
 

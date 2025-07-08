@@ -21,7 +21,7 @@ function Slideshow(props) {
         position: 'absolute',
         top: 0,
         left: 0,
-        transition: 'opacity 2s ease-in-out',
+        transition: 'opacity 1s ease-in-out',
         opacity: 0,
     };
 
@@ -34,22 +34,56 @@ function Slideshow(props) {
         position: 'absolute',
         width: '100%',
         height: '100%',
-        pointerEvents: 'none', // allows clicks to pass through if needed
-        zIndex: 10, 
+        pointerEvents: 'none',
+        zIndex: 10,
         display: 'flex',
-        alignItems: 'center',     // vertical centering
+        alignItems: 'center',
         justifyContent: 'center',
-    }
+        marginTop: '48px',
+    };
+
+    const arrowStyle = {
+        position: 'absolute',
+        top: '50%',
+        transform: 'translateY(-50%)',
+        fontSize: '2rem',
+        color: 'white',
+        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        border: 'none',
+        padding: '0.5rem 1rem',
+        cursor: 'pointer',
+        zIndex: 20,
+    };
+
+    const leftArrowStyle = {
+        ...arrowStyle,
+        left: '10px',
+    };
+
+    const rightArrowStyle = {
+        ...arrowStyle,
+        right: '10px',
+    };
+
+    const goToPrevious = () => {
+        setCurrentIndex((prevIndex) =>
+            (prevIndex - 1 + props.images.length) % props.images.length
+        );
+    };
+
+    const goToNext = () => {
+        setCurrentIndex((prevIndex) =>
+            (prevIndex + 1) % props.images.length
+        );
+    };
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCurrentIndex((prevIndex) =>
-                (prevIndex + 1) % props.images.length
-            );
-        }, props.time); // Change every 3 seconds
+            goToNext();
+        }, props.time);
 
         return () => clearInterval(interval);
-    }, [props.images.length]);
+    }, [props.images.length, props.time]);
 
     return (
         <div style={slideshowStyle}>
@@ -64,8 +98,18 @@ function Slideshow(props) {
                     }}
                 />
             ))}
+            {props.withArrows &&
+                <button style={leftArrowStyle} onClick={goToPrevious}>
+                    ‹
+                </button>
+            }
+            {props.withArrows &&
+                <button style={rightArrowStyle} onClick={goToNext}>
+                    ›
+                </button>
+            }
             <div style={overlayStyle}>
-                {props.overlay}
+                {props.overlay && props.overlay}
             </div>
         </div>
     );

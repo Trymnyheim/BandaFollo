@@ -6,8 +6,8 @@ import Title from '../components/Title.jsx';
 function Home() {
 
     const images = [
-        {url: "/src/assets/raad_veiledning.jpg"},
-        {url: "/src/assets/test.jpg"}
+        {url: "/src/assets/butikk/butikk.jpg"},
+        {url: "/src/assets/test1.jpg"}
     ]
 
     const campaign = {
@@ -19,8 +19,8 @@ function Home() {
 
     return (
         <div>
-            <div className="banner">
-                <Slideshow images={images} time={10000} overlay={<Title />}/>
+            <div style={{height: '55vh'}}>
+                <Slideshow images={images} time={10000} overlay={<Title text={["Spesialforretning innen", "sykepleie- og helseartikler"]}/>}/>
             </div>
             <br/>
             <Icons />
