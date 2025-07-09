@@ -1,18 +1,18 @@
 import {useState} from 'react';
 
 import NavCardContainer from '../components/NavCardContainer.jsx'
-import Kompresjonstoy from '../pages/produkter/Kompresjonstoy.jsx'
-import Brystproteser from '../pages/produkter/Brystproteser.jsx'
-import Brokkbelter from '../pages/produkter/Brokkbelter.jsx'
-import Saarprodukter from '../pages/produkter/Saarprodukter.jsx'
-import Saalerogsko from '../pages/produkter/Saalerogsko.jsx'
-import Stottebandasjer from '../pages/produkter/Stottebandasjer.jsx'
-import Stomi from '../pages/produkter/Stomi.jsx'
-import Kateter from '../pages/produkter/Kateter.jsx'
-import Inkontinens from '../pages/produkter/Inkontinens.jsx'
-import Ernaering from '../pages/produkter/Ernaering.jsx'
-import Hoftebeskytter from '../pages/produkter/Hoftebeskytter.jsx'
-import Saarbehandling from '../pages/produkter/Saarbehandling.jsx'
+import Kompresjonstoy from './produkter/Kompresjonstoy.jsx'
+import Brystproteser from './produkter/Brystproteser.jsx'
+import Brokkbelter from './produkter/Brokkbelter.jsx'
+import Saarprodukter from './produkter/Saarprodukter.jsx'
+import Saalerogsko from './produkter/Saalerogsko.jsx'
+import Stottebandasjer from './produkter/Stottebandasjer.jsx'
+import Stomi from './produkter/Stomi.jsx'
+import Kateter from './produkter/Kateter.jsx'
+import Inkontinens from './produkter/Inkontinens.jsx'
+import Ernaering from './produkter/Ernaering.jsx'
+import Hoftebeskytter from './produkter/Hoftebeskytter.jsx'
+import Saarbehandling from './produkter/Saarbehandling.jsx'
 import BackToTop from '../components/BackToTop.jsx';
 
 
