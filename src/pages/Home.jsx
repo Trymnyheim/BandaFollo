@@ -6,8 +6,8 @@ import Title from '../components/Title.jsx';
 function Home() {
 
     const images = [
-        {url: "/assets/butikk/butikk.jpg"},
-        {url: "/assets/test1.jpg"}
+        {url: "/images/butikk/butikk.jpg"},
+        {url: "/images/test1.jpg"}
     ]
 
     const campaign = {
