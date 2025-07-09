@@ -14,7 +14,7 @@ function Home() {
         title: "20% på Mediven cotton",
         text: "Den første medisinke kompresjonsstrømpen med økologisk bomull og resirkulert polyamid - fra medi. Vi hjelper deg med tilpassing i vår butikk, stikk gjerne innom!",
         disclaimer: "Tilbudet gjelder fra 1/3 til 31/3",
-        img: "/src/assets/kampanje.jpg"
+        img: "/images/kampanje.jpg"
     }
 
     return (
