@@ -20,7 +20,7 @@ function Home() {
     return (
         <div>
             <div style={{height: '55vh'}}>
-                <Slideshow images={images} time={10000} overlay={<Title text={["Spesialforretning innen", "sykepleie- og helseartikler"]}/>}/>
+                <Slideshow images={images} time={10000} overlay={<Title text={["Hei pappa!", "Spesialforretning innen", "sykepleie- og helseartikler"]}/>}/>
             </div>
             <br/>
             <Icons />
