@@ -34,7 +34,7 @@ function OmOss() {
 
     const box2Style = {
         ...image,
-        backgroundImage: `url("/src/assets/butikk/toyogsko.jpg")`,
+        backgroundImage: `url("/images/butikk/toyogsko.jpg")`,
         width: '100%',
         height: '25rem'
     }
@@ -46,14 +46,14 @@ function OmOss() {
     }
 
     const images = [
-        {url: "/src/assets/raad_veiledning.jpg"},
-        {url: "/src/assets/test.jpg"}
+        {url: "/images/raad_veiledning.jpg"},
+        {url: "/images/test.jpg"}
     ]
 
     return (
         <>
             <div className="container">
-                <img src="/src/assets/ansatte/ansatte.jpg" style={{width: '100%'}}/>
+                <img src="/images/ansatte/ansatte.jpg" style={{width: '100%'}}/>
                 <div style={topStyle}>
                     {/*
                     <div style={{...overlay, marginTop: '32px'}}>
@@ -79,7 +79,7 @@ function OmOss() {
                     <div style={lowerLeftStyle}>
                         <div style={box3Style}>
                             <div className= "container b-primary center padding" style={{width: '100%', height: '100%'}}>
-                                <img src="./src/assets/logo/banda.svg" className="banda-logo" style={{margin: 'auto'}} />
+                                <img src="/images/logo/banda.svg" className="banda-logo" style={{margin: 'auto'}} />
                                 <div>
                                     <h3 className="margin-vertical">Vi er medlem i Banda.</h3>
                                     <p>Banda er en norsk kjede med omtrent 50 uavhengige butikker over hele landet og er sysselsetter av omtrent 200 helsearbeidere. Kjeden er unikt eiet av de lokale eierne av butikkene.</p>

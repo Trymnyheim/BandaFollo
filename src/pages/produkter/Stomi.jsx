@@ -15,7 +15,7 @@ function Stomi() {
         ],
         subProducts: ['Stomiposer', 'Lukthemmende midler', 'Badetøy'],
         images: [
-            {url: '/src/assets/produkter/stomi/salt_uro.png'}
+            {url: '/images/produkter/stomi/salt_uro.png'}
         ]
     }
 
@@ -24,7 +24,7 @@ function Stomi() {
             <Produkt produkt={produkt} />
             <div className="container padding" style={{justifyContent: 'center', gap: '48px'}}>
                 <ImageCard
-                    image="/src/assets/"
+                    image="/images/TEMP-hjemmebesøk.png"
                     title="Vi har kompetanse"
                     text="Vår stab har rikelig med kompetanse innen stomi. Vi kan hjelpe deg å velge produkter som funker best for deg."
                     button={{
@@ -36,7 +36,7 @@ function Stomi() {
                     }}
                 />
                 <ImageCard
-                    image="/src/assets/TEMP-hjemmebesøk.png"
+                    image="/images/TEMP-hjemmebesøk.png"
                     title="Vi tilpasser utstyret"
                     text="Vi tilbyr våre kunder tilpassing av stomiutstyr, enten ved hjemmebesøk eller i vårt diskré tilpassingsrom i våre lokaler."
                     button={{

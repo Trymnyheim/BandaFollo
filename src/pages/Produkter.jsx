@@ -23,73 +23,73 @@ function Produkter() {
     const produkter = [
         {
             title: "Stomi",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Stomi,
             url: "/produkter#stomi"
         },
         {
             title: "Kateter",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Kateter,
             url: "/produkter#kateter"
         },
         {
             title: "Inkontinens",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Inkontinens,
             url: "/produkter#inkontinens"
         },
         {
             title: "Ernæring",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Ernaering,
             url: "/produkter#ernaering"
         },
         {
             title: "Hoftebeskytter",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Hoftebeskytter,
             url: "/produkter#hoftebeskytter"
         },
         {
             title: "Sårbehandling",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Saarbehandling,
             url: "/produkter#saarbehandling"
         },
         {
             title: "Kompresjonstøy/strømper",
-            image: "./src/assets/produkter/stromper.jpg",
+            image: "/images/produkter/stromper.jpg",
             page: Kompresjonstoy,
             url: "/produkter#kompresjonstoy"
         },
         {
             title: "Brystproteser",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Brystproteser,
             url: "/produkter#brystproteser"
         },
         {
             title: "Brokkbelter",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Brokkbelter,
             url: "/produkter#brokkbelter"
         },
         {
             title: "Sårprodukter",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Saarprodukter,
             url: "/produkter#saarprodukter"
         },
         {
             title: "Støttebandaser/ortoser",
-            image: "./src/assets/test.jpg",
+            image: "/images/test.jpg",
             page: Stottebandasjer,
             url: "/produkter#stottebandasjer"
         },
         {
             title: "Såler og sko",
-            image: "./src/assets/produkter/saalerogsko/sandal.jpg",
+            image: "/images/produkter/saalerogsko/sandal.jpg",
             page: Saalerogsko,
             url: "/produkter#saalerogsko"
         },

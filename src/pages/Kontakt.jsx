@@ -32,7 +32,7 @@ function Kontakt() {
                 <h4>Om det er noe vi kan hjelpe deg med, ta gjerne kontakt på telefon eller e-post.<br/>Du er også hjertelig velkommen i vår butikk!</h4>
             </div>
             <div className="container" style={{marginBottom: '24px'}}>                
-                <img src="/src/assets/butikk/stol.jpg" className= "image" style={imageStyle} />
+                <img src="/images/butikk/stol.jpg" className= "image" style={imageStyle} />
                 <div style={containerStyle}>
                     <Card>
                         <Card.Body>

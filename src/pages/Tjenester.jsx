@@ -24,9 +24,9 @@ function Tjenester() {
 
     return (
         <div style={{ display: 'flex', flexDirection: 'column', gap: '46px' }}>
-            <TextAndImage id="hjemmebesok" title="Hjemmebesøk" text={hjemmeText} image="/src/assets/test.jpg" />
-            <TextAndImage id="levering" title="Levering" text={leveringText} image="/src/assets/test.jpg" left={true} />
-            <TextAndImage id="veiledning" title="Råd og Veiledning" text={veiledningText} image="/src/assets/test.jpg" />
+            <TextAndImage id="hjemmebesok" title="Hjemmebesøk" text={hjemmeText} image="/images/test.jpg" />
+            <TextAndImage id="levering" title="Levering" text={leveringText} image="/images/test.jpg" left={true} />
+            <TextAndImage id="veiledning" title="Råd og Veiledning" text={veiledningText} image="/images/test.jpg" />
         </div>
     )
 }
