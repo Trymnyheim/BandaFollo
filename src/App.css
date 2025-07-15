@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
 /* Colors */
 
 :root {
-  --primary: rgb(21, 92, 45);
-  --primary-dark: rgb(9, 59, 28);
-  --primary-light: rgb(209, 209, 209);
+  --primary: rgb(58, 100, 71);
+  --primary-dark: rgb(23, 59, 37);
+  --primary-light: rgb(173, 216, 187);
   --secondary: ;
   --light: rgb(255, 255, 255);
+  --link: rgb(175, 70, 0);
 }
 
 
@@ -57,8 +58,6 @@ a {
   gap: 24px
 }
 
-/* Containers */
-
 .content {
   max-width: 1240px;
   margin: auto;
@@ -67,133 +66,6 @@ a {
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.overlay {
-  display: inline-flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: '24px';
-}
-
-.text-and-image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
-}
-
-/* Left: image first */
-.text-and-image.left {
-  flex-direction: row;
-}
-
-/* Right: text first */
-.text-and-image.right {
-  flex-direction: row-reverse;
-}
-
-/* Mobile: stack with image below */
-@media (max-width: 1100px) {
-  .text-and-image {
-    flex-direction: column;
-  }
-}
-
-.text-and-image-text {
-  flex: 1 1 400px;
-  padding: 24px;
-}
-
-.text-and-image img {
-  max-width: 500px;
-  width: 100%;
-}
-
-/* Images */
-
-.logo {
-  max-height: 50px;
-}
-
-.banda-logo {
-  max-height: 100px;
-}
-
-
-/* Footer */
-
-.footer {
-  margin-top: 80px;
-  padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  bottom: 0;
-  background-color: var(--primary-dark);
-  color: var(--light);
-}
-
-.footer a {
-  color: var(--light);
-}
-
-.footer-item {
-  padding: 16px;
-  min-width: 250px;
-  height: 100%;
-  margin: auto;
-}
-
-@media only screen and (max-width: 440px) {
-
-  .footer-item {
-    width: 100%;
-    margin: 10px 20px;
-  }
-
-}
-
-
-/* Navigation */
-
-.navbar {
-  background-color: var(--primary);
-}
-
-
-.icons-banner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  background-color: var(--primary);
-}
-
-.icons-component {
-  padding: 40px;
-  text-align: center;
-  color: white;
-  transition: background-color 0.2s;
-}
-
-.icons-component a {
-  color: white;
-}
-
-.icons-component:hover {
-  cursor: pointer;
-  background-color: var(--primary-dark);
-}
-
-.icons-icon {
-  width: 80px
-}
-
-/* Cards */
-
-.image-card {
-  max-width: 400px;
+  gap: 24px;
+  align-items: stretch;
 }
