@@ -2,6 +2,7 @@ import Icons from '../components/Icons.jsx';
 import Slideshow from '../components/Slideshow.jsx';
 import Campaign from '../components/Campaign.jsx';
 import Title from '../components/Title.jsx';
+import HolidayBanner from '../components/HolidayBanner.jsx';
 
 function Home() {
 
@@ -19,9 +20,10 @@ function Home() {
 
     return (
         <div>
-            <div style={{height: '55vh'}}>
+            <div style={{height: '55vh', position: 'relative'}}>
                 <Slideshow images={images} time={10000} overlay={<Title text={["Spesialforretning innen", "sykepleie- og helseartikler"]}/>}/>
             </div>
+            <HolidayBanner />
             <br/>
             <Icons />
             <div className="container">

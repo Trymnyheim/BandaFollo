@@ -1,13 +1,14 @@
 import Card from 'react-bootstrap/Card';
+import Hours from '../components/Hours'
 
 function Kontakt() {
 
     const containerStyle = {
         display: "flex",
         flexWrap: "wrap",
-        maxWidth: "350px", 
         gap: "24px", 
-        margin: "auto"
+        margin: "auto",
+        maxWidth: '350px'
     }
 
     const contactStyle = {
@@ -27,7 +28,7 @@ function Kontakt() {
 
     return (
         <>
-            <div className="center padding" >
+            <div id="contact" className="center padding" style={{maxWidth: '900px', margin: 'auto'}} >
                 <h1>Kontakt oss</h1>
                 <h4>Om det er noe vi kan hjelpe deg med, ta gjerne kontakt på telefon eller e-post.<br/>Du er også hjertelig velkommen i vår butikk!</h4>
             </div>
@@ -51,15 +52,13 @@ function Kontakt() {
                                 </div>
                         </Card.Body>
                     </Card>
-                    <Card>
-                        <Card.Body>
-                            <Card.Title className="bold" >Åpningstider</Card.Title>
-                                <ul>
-                                    <li>Mandag - Fredag: 09:00 - 17:00</li>
-                                    <li>Lørdag - Søndag: Stengt</li>
-                                </ul>
-                        </Card.Body>
-                    </Card>
+                    <Hours>
+                        <ul>
+                            <li>Mandag - Fredag: 09:00 - 17:00</li>
+                            <li>Lørdag - Søndag: Stengt</li>
+                        </ul>
+                        <p>Gjelder både for butikk og telefon.</p>
+                    </Hours>
                 </div>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2011.7216230196955!2d10.826401276920853!3d59.720820679622626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46415d1d8ead1f19%3A0x6f84efd1aade62f9!2sBanda%20Follo%20AS!5e0!3m2!1sno!2sno!4v1749665695375!5m2!1sno!2sno" width="100%" height="500" style={{border: "0"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>    

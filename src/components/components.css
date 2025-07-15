@@ -1,0 +1,198 @@
+
+.info-and-image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 48px;
+  margin: 48px 0px;
+}
+
+.info-and-image {
+  flex: 1 1 700px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 0 0 0;
+}
+
+.info-and-image-child {
+  margin: 24px;
+}
+
+.info-and-image-child-center {
+  margin: auto 24px;
+}
+
+.info-and-image img {
+  max-width: 100%;
+}
+
+.info-and-image-bordered {
+  border: 2px solid var(--primary-dark);
+  border-radius: 12px;
+}
+
+@media (max-width: 450px) {
+  .info-and-image-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .info-and-image-child {
+    margin: 12px;
+  }
+}
+
+.text-and-image {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Left: image first */
+.text-and-image.left {
+  flex-direction: row;
+}
+
+/* Right: text first */
+.text-and-image.right {
+  flex-direction: row-reverse;
+}
+
+/* Mobile: stack with image below */
+@media (max-width: 1100px) {
+  .text-and-image {
+    flex-direction: column;
+  }
+}
+
+.text-and-image-text {
+  flex: 1 1 400px;
+  padding: 24px;
+}
+
+.text-and-image img {
+  max-width: 500px;
+  width: 100%;
+}
+
+.overlay {
+  display: inline-flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: '24px';
+}
+
+
+/* Images */
+
+.logo {
+  max-height: 50px;
+}
+
+.banda-logo {
+  max-height: 100px;
+  display: inline-block;
+}
+
+
+/* Footer */
+
+.footer {
+  margin-top: 80px;
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--primary-dark);
+  color: var(--light);
+}
+
+.footer a {
+  color: var(--light);
+}
+
+.footer-item {
+  padding: 16px;
+  min-width: 250px;
+  height: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 440px) {
+
+  .footer-item {
+    width: 100%;
+    margin: 10px 20px;
+  }
+
+}
+
+
+/* Navigation */
+
+.navbar {
+  background-color: var(--primary);
+}
+
+
+.icons-banner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--primary);
+}
+
+.icons-component {
+  padding: 40px;
+  text-align: center;
+  color: white;
+  transition: background-color 0.2s;
+}
+
+.icons-component a {
+  color: white;
+}
+
+.icons-component:hover {
+  cursor: pointer;
+  background-color: var(--primary-dark);
+}
+
+.icons-icon {
+  width: 80px
+}
+
+.link {
+  color: var(--link);
+}
+
+/* Cards */
+
+.image-card {
+  max-width: 400px;
+}
+
+
+.holiday-hours {
+  font-weight: bold;
+}
+
+.holiday-hours img {
+  margin-top: 12px;
+  width: 80%;
+}
+
+.holiday-hours.påske {
+  color: rgb(179, 101, 0);
+}
+
+.holiday-hours.jul {
+  color: rgb(148, 35, 7);
+}
+
+.holiday-hours.sommer {
+  color: rgb(3, 104, 0);
+}
