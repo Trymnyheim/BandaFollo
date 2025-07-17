@@ -4,7 +4,7 @@ function Brokkbelter() {
 
     const produkt = {
         title: "Tittel",
-        about: "",
+        about: [],
         subProducts: [],
         images: []
     }

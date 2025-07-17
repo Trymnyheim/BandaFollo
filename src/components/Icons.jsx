@@ -1,12 +1,10 @@
 import { HashLink } from 'react-router-hash-link';
-
-function scrollWithOffset(el) {
-  const yOffset = -76; // height of navbar
-  const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
-  window.scrollTo({ top: y, behavior: 'smooth' });
-}
+import useScrollWithOffset from '../utils/useScrollWithOffset.jsx';
 
 function Icons() {
+
+    const scrollWithOffset = useScrollWithOffset();
+
     return (
         <div className="icons-banner">
             <div className="icons-component">
