@@ -7,15 +7,16 @@ function Slideshow(props) {
         position: 'relative',
         overflow: 'hidden',
         width: '100%',
-        height: '100%',
+        height: `${props.height ? props.height + 'vh': '100%'}`,
     };
 
     const imageStyle = {
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundSize: 'cover',
+        backgroundSize: props.contain ? 'contain': 'cover',
         backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
         height: '100%',
         width: '100%',
         position: 'absolute',

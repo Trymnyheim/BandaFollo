@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import { HolidayContext } from '../utils/HolidayContext';
 import Card from 'react-bootstrap/Card'
-import hours from '../assets/hours.json';
+import hours from '../utils/hours.json';
 
 function Hours({ children }) {
 

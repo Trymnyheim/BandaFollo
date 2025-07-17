@@ -20,18 +20,20 @@ function Stomi() {
     }
 
     return (
-        <div id="stomi">
-            <Produkt produkt={produkt} />
+        <>
+            <Produkt produkt={produkt} id='stomi' />
             <div className="container padding" style={{justifyContent: 'center', gap: '48px'}}>
                 <ImageCard
-                    image="/images/TEMP-hjemmebesøk.png"
-                    title="Vi har kompetanse"
-                    text="Vår stab har rikelig med kompetanse innen stomi. Vi kan hjelpe deg å velge produkter som funker best for deg."
+                    image="/images/produkter/stomi/stomi.webp"
+                    title="Bestill på nett"
+                    text= {[
+                        'Les mer om vårt utvalg av stomiutstyr på Banda\'s nettbutikk.',
+                        'Husk å velge Banda Follo som leverandør, hvis du ønsker varene dine levert av oss.'
+                    ]}
                     button={{
-                        text: "Les mer om vår kompetanse",
+                        text: "Til Banda's nettbutikk",
                         action: () => {
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
-                            navigate('/omoss');
+                            window.open("https://www.banda.no/produkter/stomi", "_blank");
                         }
                     }}
                 />
@@ -48,8 +50,7 @@ function Stomi() {
                     }}
                 />
             </div>
-
-        </div>
+        </>
     )
 }
 

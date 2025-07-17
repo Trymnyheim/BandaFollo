@@ -41,16 +41,12 @@ function OmOss() {
                         samtale/prøverom benyttes. Alle våre medarbeidere har taushetsplikt.
                     </p>
                 </InfoAndImage>
-                <InfoAndImage title="Trygghet">
+                <InfoAndImage title="Tilgjengelighet">
                     <p>
                         Banda Follo er den eneste bandagisten med butikk i vårt distrikt. Vår 
                         butikk ligger i Ski, med gratis kundeparkering rett utenfor døren og kun 
                         omtrent fem minutter å gå fra stasjon.&nbsp;
-                        <HashLink
-                            scroll={scrollWithOffset }
-                            to={'/kontakt#contact'}
-                            className="link"
-                        >
+                        <HashLink scroll={scrollWithOffset} to={'/kontakt#contact'} className="link">
                             Se våre åpningstider og butikkens adresse her.
                         </HashLink>
                     </p>
@@ -63,8 +59,7 @@ function OmOss() {
                     <p>
                         Trenger du av ulike årsaker å avtale et hjemmebesøk så er vi aldri langt unna. 
                         Vi er lokalkjent og bor selv her i Follo!&nbsp;
-                        <HashLink
-                            scroll={scrollWithOffset }to={'/kontakt#contact'} className="link" >
+                        <HashLink scroll={scrollWithOffset }to={'/kontakt#contact'} className="link" >
                             Se kontaktinformasjon her.
                         </HashLink>
                     </p>
@@ -76,12 +71,16 @@ function OmOss() {
                         Banda er en norsk kjede med omtrent 50 uavhengige butikker over hele 
                         landet og er sysselsetter av omtrent 200 helsearbeidere. Kjeden er 
                         unikt eiet av de lokale eierne av butikkene.
+                        <br/>
+                        <a href="https://www.banda.no/om-banda" className="link-light" target="_blank">
+                            Les mer om Bandakjeden her.
+                        </a>
                     </p>
                 </InfoAndImage>
             </div>
-            <div style={{marginTop: '48px', height: '500px'}}>
+            <div className="container">
                 <h1 className="center">Sjekk ut vår butikk</h1>
-                <Slideshow images={images} time={10000} withArrows={true} />
+                <Slideshow images={images} time={10000} withArrows={true} height="60"/>
             </div>
         </>
     )

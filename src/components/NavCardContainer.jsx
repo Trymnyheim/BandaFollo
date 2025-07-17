@@ -2,19 +2,13 @@ import NavCard from './NavCard.jsx'
 
 function NavCardContainer({items, setSelectedPage}) {
 
-    const style = {
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        gap: "20px"
-    }
-
     return (
-        <div style={style}>
+        <div className="container justify-center">
                 {items.map((item, index) => (
                     <NavCard
                         key={index}
                         title={item.title}
+                        text={item?.text ? item.text : ""}
                         image={item.image}
                         url={item.url}
                         select={() => setSelectedPage(() => item.page)}

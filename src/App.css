@@ -4,12 +4,13 @@
 /* Colors */
 
 :root {
-  --primary: rgb(58, 100, 71);
+  --primary: rgb(50, 87, 62);
   --primary-dark: rgb(23, 59, 37);
   --primary-light: rgb(173, 216, 187);
   --secondary: ;
   --light: rgb(255, 255, 255);
-  --link: rgb(175, 70, 0);
+  --link: rgb(0, 116, 96);
+  --link-light: rgb(194, 255, 179);
 }
 
 
@@ -36,6 +37,14 @@ body {
 a {
   color: black;
   text-decoration: none;
+}
+
+.link {
+  color: var(--link) !important;
+}
+
+.link-light {
+  color: var(--link-light) !important;
 }
 
 .bold {
@@ -68,4 +77,65 @@ a {
   flex-wrap: wrap;
   gap: 24px;
   align-items: stretch;
+}
+
+.container.justify-center {
+  justify-content: center;
+}
+
+/* Images */
+
+.logo {
+  width: 250px;
+  height: 50px;
+
+}
+
+@media (max-width: 400px) {
+  .logo {
+    width: 180px;
+}
+}
+
+.banda-logo {
+  max-height: 75px;
+  display: inline-block;
+}
+
+.arrow-container {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin-right: 12px;
+}
+
+.arrow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
+}
+
+.with-arrow .arrow-pointy {
+  opacity: 1;
+  z-index: 1;
+}
+
+.with-arrow:hover {
+backdrop-filter: blur(8px);}
+
+.with-arrow .arrow-full {
+  opacity: 0;
+  z-index: 0;
+}
+
+.with-arrow:hover .arrow-pointy {
+  opacity: 0;
+  z-index: 0;
+}
+
+.with-arrow:hover .arrow-full {
+  opacity: 1;
+  z-index: 1;
 }

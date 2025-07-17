@@ -19,11 +19,11 @@ function Title({text}) {
     return (
         <div style={titleStyle}>
             <img style={logoStyle} src="/images/logo/bandafollo_man.svg"/>
-            <h3>
+            <h4>
                 {text.map((text, index) => (
                     <span key={index}>{text}<br/></span>
             ))}
-            </h3>
+            </h4>
         </div>
     )
 }

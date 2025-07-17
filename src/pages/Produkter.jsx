@@ -28,6 +28,19 @@ function Produkter() {
             url: "/produkter#stomi"
         },
         {
+            title: "Ernæring",
+            image: "/images/test.jpg",
+            page: Ernaering,
+            url: "/produkter#ernaering"
+        },
+                {
+            title: "Brystproteser",
+            image: "/images/test.jpg",
+            page: Brystproteser,
+            url: "/produkter#brystproteser"
+        },
+        /*
+        {
             title: "Kateter",
             image: "/images/test.jpg",
             page: Kateter,
@@ -38,12 +51,6 @@ function Produkter() {
             image: "/images/test.jpg",
             page: Inkontinens,
             url: "/produkter#inkontinens"
-        },
-        {
-            title: "Ernæring",
-            image: "/images/test.jpg",
-            page: Ernaering,
-            url: "/produkter#ernaering"
         },
         {
             title: "Hoftebeskytter",
@@ -62,12 +69,6 @@ function Produkter() {
             image: "/images/produkter/stromper.jpg",
             page: Kompresjonstoy,
             url: "/produkter#kompresjonstoy"
-        },
-        {
-            title: "Brystproteser",
-            image: "/images/test.jpg",
-            page: Brystproteser,
-            url: "/produkter#brystproteser"
         },
         {
             title: "Brokkbelter",
@@ -93,13 +94,14 @@ function Produkter() {
             page: Saalerogsko,
             url: "/produkter#saalerogsko"
         },
-
+        */
 
     ]
 
     const style = {
         display: "grid",
-        gap: "50px"
+        gap: "50px",
+        marginTop: '48px'
 
     }
 
