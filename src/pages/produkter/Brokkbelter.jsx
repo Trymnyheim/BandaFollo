@@ -3,14 +3,24 @@ import Produkt from '/src/components/Produkt.jsx'
 function Brokkbelter() {
 
     const produkt = {
-        title: "Tittel",
-        about: [],
-        subProducts: [],
-        images: []
+        title: "Brokkbelter",
+        about: [
+            ''
+        ],  
+        subProducts: [
+        ],
+        underText: ' ',
+        images: [
+            {url: '/images/produkter/brokkbelter/'},
+            {url: '/images/produkter/brokkbelter/'},
+            {url: '/images/produkter/brokkbelter/'}
+        ]
     }
 
     return (
-        <Produkt produkt={produkt} />
+        <Produkt produkt={produkt} id="brokkbelter" >
+
+        </Produkt>
     )
 }
 

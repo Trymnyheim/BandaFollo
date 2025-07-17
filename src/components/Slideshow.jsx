@@ -6,8 +6,8 @@ function Slideshow(props) {
     const slideshowStyle = {
         position: 'relative',
         overflow: 'hidden',
-        width: '100%',
-        height: `${props.height ? props.height + 'vh': '100%'}`,
+        width: `${props.width ? props.width + 'vh': '100%'}`,
+        height: `${props.height ? props.height + 'vh': '100%'}`
     };
 
     const imageStyle = {

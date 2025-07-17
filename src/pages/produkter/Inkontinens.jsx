@@ -1,9 +1,26 @@
+import Produkt from '/src/components/Produkt.jsx'
+
 function Inkontinens() {
 
+    const produkt = {
+        title: "Inkontinens",
+        about: [
+            ''
+        ],  
+        subProducts: [
+        ],
+        underText: ' ',
+        images: [
+            {url: '/images/produkter/inkontinens/'},
+            {url: '/images/produkter/inkontinens/'},
+            {url: '/images/produkter/inkontinens/'}
+        ]
+    }
+
     return (
-        <div id="inkontinens">
-            <h1>Inkontinens</h1>
-        </div>
+        <Produkt produkt={produkt} id="inkontinens" >
+
+        </Produkt>
     )
 }
 

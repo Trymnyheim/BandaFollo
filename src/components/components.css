@@ -49,13 +49,16 @@
 
 .nav-card img {
   height: 12rem;
-  object-fit: cover;
+  width: 16rem;
+  object-fit: contain;
+  border: solid 1px rgb(214, 214, 214);
+  background-color: white;
+
 }
 
 .nav-card:hover {
   filter: brightness(80%);
 }
-
 
 
 

@@ -21,8 +21,7 @@ function Stomi() {
 
     return (
         <>
-            <Produkt produkt={produkt} id='stomi' />
-            <div className="container padding" style={{justifyContent: 'center', gap: '48px'}}>
+            <Produkt produkt={produkt} id='stomi' >
                 <ImageCard
                     image="/images/produkter/stomi/stomi.webp"
                     title="Bestill på nett"
@@ -49,7 +48,7 @@ function Stomi() {
                         }
                     }}
                 />
-            </div>
+            </Produkt>
         </>
     )
 }
