@@ -4,7 +4,6 @@ import NavCardContainer from '../components/NavCardContainer.jsx'
 import Kompresjonstoy from './produkter/Kompresjonstoy.jsx'
 import Brystproteser from './produkter/Brystproteser.jsx'
 import Brokkbelter from './produkter/Brokkbelter.jsx'
-import Saarprodukter from './produkter/Saarprodukter.jsx'
 import Saalerogsko from './produkter/Saalerogsko.jsx'
 import Stottebandasjer from './produkter/Stottebandasjer.jsx'
 import Stomi from './produkter/Stomi.jsx'
@@ -23,78 +22,71 @@ function Produkter() {
     const produkter = [
         {
             title: "Stomi",
-            image: "/images/test.jpg",
+            image: "/images/produkter/stomi/salt_uro.png",
             page: Stomi,
             url: "/produkter#stomi"
         },
         {
             title: "Ernæring",
-            image: "/images/test.jpg",
+            image: "/images/produkter/ernaering/resource_apple.webp",
             page: Ernaering,
             url: "/produkter#ernaering"
         },
                 {
             title: "Brystproteser",
-            image: "/images/test.jpg",
+            image: "/images/produkter/brystproteser/brystproteser5.jpg",
             page: Brystproteser,
             url: "/produkter#brystproteser"
         },
-        /*
         {
             title: "Kateter",
-            image: "/images/test.jpg",
+            image: "/images/produkter/kateter/kateter_illustrasjon.webp",
             page: Kateter,
             url: "/produkter#kateter"
         },
+        ,
+        {
+            title: "Såler og sko",
+            image: "/images/produkter/saalerogsko/sko.webp",
+            page: Saalerogsko,
+            url: "/produkter#saalerogsko"
+        },
+        {
+            title: "Sårbehandling",
+            image: "/images/produkter/saarprodukter/plaster.jpg",
+            page: Saarbehandling,
+            url: "/produkter#saarbehandling"
+        },
         {
             title: "Inkontinens",
-            image: "/images/test.jpg",
+            image: "/images/produkter/inkontinens/inkontinens.webp",
             page: Inkontinens,
             url: "/produkter#inkontinens"
         },
         {
             title: "Hoftebeskytter",
-            image: "/images/test.jpg",
+            image: "/images/produkter/hoftebeskytter/hoftebeskytter.jpg",
             page: Hoftebeskytter,
             url: "/produkter#hoftebeskytter"
         },
         {
-            title: "Sårbehandling",
-            image: "/images/test.jpg",
-            page: Saarbehandling,
-            url: "/produkter#saarbehandling"
-        },
-        {
             title: "Kompresjonstøy/strømper",
-            image: "/images/produkter/stromper.jpg",
+            image: "/images/produkter/kompresjonstoy/strompe.webp",
             page: Kompresjonstoy,
             url: "/produkter#kompresjonstoy"
         },
         {
             title: "Brokkbelter",
-            image: "/images/test.jpg",
+            image: "/images/produkter/brokkbelter/brokkbelte1.jpg",
             page: Brokkbelter,
             url: "/produkter#brokkbelter"
         },
         {
-            title: "Sårprodukter",
-            image: "/images/test.jpg",
-            page: Saarprodukter,
-            url: "/produkter#saarprodukter"
-        },
-        {
-            title: "Støttebandaser/ortoser",
-            image: "/images/test.jpg",
+            title: "Støttebandasjer/ortoser",
+            image: "/images/produkter/stottebandasjer/kne.webp",
             page: Stottebandasjer,
             url: "/produkter#stottebandasjer"
-        },
-        {
-            title: "Såler og sko",
-            image: "/images/produkter/saalerogsko/sandal.jpg",
-            page: Saalerogsko,
-            url: "/produkter#saalerogsko"
-        },
-        */
+        }
 
     ]
 

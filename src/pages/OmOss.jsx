@@ -80,7 +80,7 @@ function OmOss() {
             </div>
             <div className="container">
                 <h1 className="center">Sjekk ut vår butikk</h1>
-                <Slideshow images={images} time={10000} withArrows={true} height="60"/>
+                <Slideshow images={images} time={10000} withArrows={true} height="30" contain/>
             </div>
         </>
     )

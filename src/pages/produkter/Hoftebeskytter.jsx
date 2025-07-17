@@ -1,9 +1,26 @@
+import Produkt from '/src/components/Produkt.jsx'
+
 function Hoftebeskytter() {
 
+    const produkt = {
+        title: "Hoftebeskytter",
+        about: [
+            ''
+        ],  
+        subProducts: [
+        ],
+        underText: ' ',
+        images: [
+            {url: '/images/produkter/hoftebeskytter/'},
+            {url: '/images/produkter/hoftebeskytter/'},
+            {url: '/images/produkter/hoftebeskytter/'}
+        ]
+    }
+
     return (
-        <div id="hoftebeskytter">
-            <h1>Hoftebeskytter</h1>
-        </div>
+        <Produkt produkt={produkt} id="hoftebeskytter" >
+
+        </Produkt>
     )
 }
 

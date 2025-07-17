@@ -1,8 +1,26 @@
+import Produkt from '/src/components/Produkt.jsx'
+
 function Kompresjonstoy() {
+
+    const produkt = {
+        title: 'Kompresjonstøy og strømper',
+        about: [
+            ''
+        ],  
+        subProducts: [
+        ],
+        underText: ' ',
+        images: [
+            {url: '/images/produkter/kompresjonstoy/'},
+            {url: '/images/produkter/kompresjonstoy/'},
+            {url: '/images/produkter/kompresjonstoy/'}
+        ]
+    }
+
     return (
-        <div id="kompresjonstoy">
-            <h1>Kompresjonstøy og strømper</h1>
-        </div>
+        <Produkt produkt={produkt} id='kompresjonstoy'>
+            
+        </Produkt>
     )
 }
 

@@ -1,9 +1,26 @@
+import Produkt from '/src/components/Produkt.jsx'
+
 function Saarbehandling() {
 
+    const produkt = {
+        title: 'Sårbehandling',
+        about: [
+            ''
+        ],  
+        subProducts: [
+        ],
+        underText: ' ',
+        images: [
+            {url: '/images/produkter/saarbehandling/'},
+            {url: '/images/produkter/saarbehandling/'},
+            {url: '/images/produkter/saarbehandling/'}
+        ]
+    }
+
     return (
-        <div id="saarbehandling">
-            <h1>Sårbehandling</h1>
-        </div>
+        <Produkt produkt={produkt} id='saarbehandling'>
+            
+        </Produkt>
     )
 }
 
