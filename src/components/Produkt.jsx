@@ -6,7 +6,7 @@ function Produkt({ produkt, id, children}) {
   const containerStyle = { flex: '1 0 300px' };
 
   const linkedParagraphs = produkt.about.map((p) => useLinkify(p));
-  const linkedUnderText = produkt.underText ? useLinkify(produkt.underText) : null;
+  const linkedUnderText = produkt.underText ? produkt.underText.map((p) => useLinkify(p)) : [];
 
   return (
     <div className="container" id={id}>
@@ -22,14 +22,16 @@ function Produkt({ produkt, id, children}) {
           ))}
         </ul>
 
-        {linkedUnderText}
+        {linkedUnderText.map((linked, index) => (
+          <Fragment key={index}>{linked}</Fragment>
+        ))}
 
       </div>
 
       <div style={{...containerStyle, border: 'solid 1px rgba(209, 209, 209, 1)'}} >
         <Slideshow
           images={produkt.images}
-          time={10000}
+          time={1000000}
           withArrows={true}
           height='50'
           contain

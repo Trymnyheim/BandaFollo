@@ -9,7 +9,7 @@ function Brokkbelter() {
         ],  
         subProducts: [
         ],
-        underText: ' ',
+        underText: [],
         images: [
             {url: '/images/produkter/brokkbelter/'},
             {url: '/images/produkter/brokkbelter/'},

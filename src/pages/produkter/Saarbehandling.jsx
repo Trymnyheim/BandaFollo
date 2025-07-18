@@ -9,7 +9,7 @@ function Saarbehandling() {
         ],  
         subProducts: [
         ],
-        underText: ' ',
+        underText: [],
         images: [
             {url: '/images/produkter/saarbehandling/'},
             {url: '/images/produkter/saarbehandling/'},

@@ -13,7 +13,9 @@ function Brystproteser() {
             'Badetøy',
             'Hodeplagg'
         ],
-        underText: 'Bestill gjerne time for tilpassing, da vi gjerne vil ha ekstra tid og fokus på deg. Vi har et eget rom hvor diskresjon er i varetatt.',
+        underText: [
+            'Bestill gjerne time for tilpassing, da vi gjerne vil ha ekstra tid og fokus på deg. Vi har et eget rom hvor diskresjon er i varetatt.'
+        ],
         images: [
             {url: '/images/produkter/brystproteser/brystprotese.jpg'},
             {url: '/images/produkter/brystproteser/brystprotese2.jpg'},

@@ -2,6 +2,9 @@ import { useState, useEffect } from 'react';
 
 function Slideshow(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [showArrows, setShowArrows] = useState(
+            props.withArrows && (props.images?.length || 0) > 1
+        );
 
     const slideshowStyle = {
         position: 'relative',
@@ -99,15 +102,15 @@ function Slideshow(props) {
                     }}
                 />
             ))}
-            {props.withArrows &&
-                <button style={leftArrowStyle} onClick={goToPrevious}>
-                    ‹
-                </button>
-            }
-            {props.withArrows &&
-                <button style={rightArrowStyle} onClick={goToNext}>
-                    ›
-                </button>
+            {showArrows &&
+                <>
+                    <button style={leftArrowStyle} onClick={goToPrevious}>
+                        ‹
+                    </button>
+                    <button style={rightArrowStyle} onClick={goToNext}>
+                        ›
+                    </button>
+                </>
             }
             <div style={overlayStyle}>
                 {props.overlay && props.overlay}

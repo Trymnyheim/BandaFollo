@@ -3,11 +3,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 48px;
-  margin: 48px 0px;
+  margin: 48px;
 }
 
 .info-and-image {
-  flex: 1 1 700px;
+  flex: 1 1 600px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -34,6 +34,7 @@
 @media (max-width: 450px) {
   .info-and-image-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 48px 0px;
   }
 
   .info-and-image-child {
@@ -109,7 +110,6 @@
 /* Footer */
 
 .footer {
-  margin-top: 80px;
   padding: 24px;
   display: flex;
   flex-wrap: wrap;
@@ -195,4 +195,8 @@
 
 .holiday-hours.sommer {
   color: rgb(3, 104, 0);
+}
+
+.back-to-top {
+  max-width: var(--max-width);
 }

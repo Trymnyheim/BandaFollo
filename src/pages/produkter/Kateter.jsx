@@ -13,7 +13,9 @@ function Kateter() {
             'Kateterventiler',
             'Urinposer (med ulike festeanordninger)'
         ],
-        underText: 'Vår uroterapeut (urologisk sykepleier) kan bistå med valg av utstyr, gode råd og opplæring i bruk av kateter.',
+        underText: [
+            'Vår uroterapeut (urologisk sykepleier) kan bistå med valg av utstyr, gode råd og opplæring i bruk av kateter.'
+        ],
         images: [
             {url: '/images/produkter/kateter/'},
             {url: '/images/produkter/kateter/'},

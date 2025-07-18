@@ -3,7 +3,7 @@ function Campaign({campaign}) {
     const campaignContainer = {
         display: "flex",
         flexWrap: "wrap",
-        maxWidth: "550px",
+        maxWidth: "500px",
         margin: "24px auto"
     }
 

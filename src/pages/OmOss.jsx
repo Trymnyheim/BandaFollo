@@ -78,9 +78,17 @@ function OmOss() {
                     </p>
                 </InfoAndImage>
             </div>
-            <div className="container">
-                <h1 className="center">Sjekk ut vår butikk</h1>
-                <Slideshow images={images} time={10000} withArrows={true} height="30" contain/>
+            <div className="padding center" style={{maxWidth: '700px', margin: 'auto'}}>
+                <h3 style={{textAlign: 'center'}}>Du er hjertelig velkommen!</h3>
+                <p>Hvis du ønsker å få en forsmak på hvordan det ser ut hos oss, så har vi satt sammen en liten digital omvisning nedenfor. Stikk gjerne innom om du ønsker å se mer eller&nbsp;
+                    <HashLink scroll={scrollWithOffset }to={'/kontakt#contact'} className="link" >
+                        ta kontakt&nbsp;
+                    </HashLink>
+                    hvis det er noe du lurer på.
+                </p>
+            </div>
+            <div style={{width: '100%', border: 'solid 1px rgba(209, 209, 209, 1)'}}>
+                <Slideshow images={images} time={10000} withArrows={true} height="65" contain/>
             </div>
         </>
     )
