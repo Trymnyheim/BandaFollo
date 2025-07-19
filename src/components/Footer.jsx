@@ -2,6 +2,7 @@ import {useState} from 'react';
 import Shop from './Shop.jsx';
 
 function Footer() {
+    
     const [showShop, setShowShop] = useState(false);
     const handleCloseShop = () => setTimeout(() => setShowShop(false), 0);
     const handleShowShop = () => setShowShop(true);

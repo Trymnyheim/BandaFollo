@@ -3,11 +3,11 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 48px;
-  margin: 48px 0px;
+  margin: 48px;
 }
 
 .info-and-image {
-  flex: 1 1 700px;
+  flex: 1 1 600px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -34,12 +34,14 @@
 @media (max-width: 450px) {
   .info-and-image-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    margin: 48px 0px;
   }
 
   .info-and-image-child {
     margin: 12px;
   }
 }
+
 
 .nav-card {
   flex: 0 1 400px;
@@ -61,42 +63,22 @@
 }
 
 
-
-.text-and-image {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
+.container.produkt {
+  align-items: flex-start;
 }
 
-/* Left: image first */
-.text-and-image.left {
-  flex-direction: row;
+.produkt-text-container {
+  flex: 1 0 300px;
 }
 
-/* Right: text first */
-.text-and-image.right {
-  flex-direction: row-reverse;
+.produkt-image-container {
+  flex: 1 0 300px;
+  border: 1px solid rgba(209, 209, 209, 1);
+  aspect-ratio: 1 / 1;
 }
 
-/* Mobile: stack with image below */
-@media (max-width: 1100px) {
-  .text-and-image {
-    flex-direction: column;
-  }
-}
 
-.text-and-image-text {
-  flex: 1 1 400px;
-  padding: 24px;
-}
-
-.text-and-image img {
-  max-width: 500px;
-  width: 100%;
-}
-
+/* TODO: is overlay used? */
 .overlay {
   display: inline-flex;
   justify-content: center;
@@ -105,42 +87,6 @@
   padding: '24px';
 }
 
-
-/* Footer */
-
-.footer {
-  margin-top: 80px;
-  padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  bottom: 0;
-  background-color: var(--primary-dark);
-  color: var(--light);
-}
-
-.footer a {
-  color: var(--light);
-}
-
-.footer-item {
-  padding: 16px;
-  min-width: 250px;
-  height: 100%;
-  margin: auto;
-}
-
-@media only screen and (max-width: 440px) {
-
-  .footer-item {
-    width: 100%;
-    margin: 10px 20px;
-  }
-
-}
-
-
-/* Navigation */
 
 .icons-banner {
   display: flex;
@@ -169,7 +115,6 @@
   width: 80px
 }
 
-/* Cards */
 
 .image-card {
   max-width: 400px;
@@ -195,4 +140,106 @@
 
 .holiday-hours.sommer {
   color: rgb(3, 104, 0);
+}
+
+
+.back-to-top {
+  max-width: var(--max-width);
+}
+
+
+.slideshow {
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-image {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slideshow-image.active {
+  opacity: 1;
+}
+
+.slideshow-image.cover {
+  background-size: cover;
+}
+
+.slideshow-image.contain {
+  background-size: contain;
+}
+
+.slideshow-overlay {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  margin-top: 48px;
+  z-index: 10;
+}
+
+.slideshow-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 48px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 20;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slideshow-arrow.left {
+  left: 10px;
+}
+
+.slideshow-arrow.right {
+  right: 10px;
+}
+
+
+.footer {
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--primary-dark);
+  color: var(--light);
+}
+
+.footer a {
+  color: var(--light);
+}
+
+.footer-item {
+  padding: 16px;
+  min-width: 250px;
+  height: 100%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 440px) {
+
+  .footer-item {
+    width: 100%;
+    margin: 10px 20px;
+  }
+
 }

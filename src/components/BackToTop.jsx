@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "react-bootstrap/Button";
 
 function BackToTop({ text }) {
+    
     const buttonRef = useRef(null);
     const [isSticky, setIsSticky] = useState(false);
     const [originalTop, setOriginalTop] = useState(null);
@@ -16,7 +17,6 @@ function BackToTop({ text }) {
         borderRadius: "0",
         position: isSticky ? "fixed" : "static",
         top: isSticky ? "76px" : "auto",
-        left: isSticky ? "0" : "auto",
         zIndex: isSticky ? 500 : "auto"
     };
 
@@ -50,8 +50,8 @@ function BackToTop({ text }) {
     }, [originalTop]);
 
     return (
-        <div ref={buttonRef}>
-            <Button onClick={toTop} variant="secondary" style={buttonStyle}>
+        <div ref={buttonRef} >
+            <Button onClick={toTop} variant="secondary" style={buttonStyle} className="max-width">
                 {text} &uarr;
             </Button>
         </div>

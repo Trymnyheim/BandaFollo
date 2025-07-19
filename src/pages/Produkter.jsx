@@ -86,6 +86,12 @@ function Produkter() {
             image: "/images/produkter/stottebandasjer/kne.webp",
             page: Stottebandasjer,
             url: "/produkter#stottebandasjer"
+        },
+        {
+            title: "Hjelpemidler",
+            image: "/images/produkter/hjelpemidler/hjelpemiddel.webp",
+            page: Stottebandasjer,
+            url: "/produkter#hjelpemidler"
         }
 
     ]

@@ -1,8 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-function ImageCard(props) {
-  const { image, title, text, button } = props;
+function ImageCard({ image, title, text, button }) {
 
   return (
     <Card className="image-card">

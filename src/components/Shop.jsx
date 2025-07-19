@@ -1,7 +1,13 @@
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
-function Shop({showShop, handleCloseShop}) {
+function Shop({ showShop, handleCloseShop }) {
+
+    const toShop = () => {
+        handleCloseShop();
+        window.open("https://www.banda.no/", "_blank");
+    }
+
     return (
         <>
             <Modal show={showShop} onHide={handleCloseShop}>
@@ -12,12 +18,9 @@ function Shop({showShop, handleCloseShop}) {
                     <p>Du blir nå videreført til Banda's nettbutikk.</p>
                     <p>For å få varene leverte fra oss, velg BandaFollo ved betaling.</p>
                 </Modal.Body>
-    
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseShop}>Lukk</Button>
-                    <a href="https://www.banda.no/" target="_blank">
-                        <Button variant="primary" onClick={handleCloseShop}>Til nettbutikken</Button>
-                    </a>
+                    <Button variant="success" onClick={toShop}>Til nettbutikken</Button>
                 </Modal.Footer>
             </Modal>
         </>

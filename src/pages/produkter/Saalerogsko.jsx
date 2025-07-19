@@ -15,7 +15,9 @@ function Saalerogsko() {
             'Fotbuestøtter',
             'Hælkapper'
         ],
-        underText: 'Stikk gjerne innom vår butikk for å se på og prøve sko.',
+        underText: [
+            'Stikk gjerne innom vår butikk for å se på og prøve sko.'
+        ],
         images: [
             {url: '/images/produkter/saalerogsko/'},
             {url: '/images/produkter/saalerogsko/'},

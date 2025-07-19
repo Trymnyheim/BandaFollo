@@ -9,7 +9,7 @@ function Inkontinens() {
         ],  
         subProducts: [
         ],
-        underText: ' ',
+        underText: [],
         images: [
             {url: '/images/produkter/inkontinens/'},
             {url: '/images/produkter/inkontinens/'},
