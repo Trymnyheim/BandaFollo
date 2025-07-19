@@ -3,14 +3,13 @@ import useLinkify from '/src/utils/useLinkify.jsx';
 import { Fragment } from 'react';
 
 function Produkt({ produkt, id, children}) {
-  const containerStyle = { flex: '1 0 300px' };
-
+  
   const linkedParagraphs = produkt.about.map((p) => useLinkify(p));
   const linkedUnderText = produkt.underText ? produkt.underText.map((p) => useLinkify(p)) : [];
 
   return (
     <div className="container" id={id}>
-      <div style={containerStyle}>
+      <div className="produkt-text-container">
         <h1>{produkt.title}</h1>
         {linkedParagraphs.map((linked, index) => (
           <Fragment key={index}>{linked}</Fragment>
@@ -27,14 +26,7 @@ function Produkt({ produkt, id, children}) {
         ))}
 
       </div>
-
-      <div style={{
-          flex: '1 0 auto',       // allow resizing
-          width: '300px',         // or any percentage you want
-          border: '1px solid rgba(209, 209, 209, 1)',
-          aspectRatio: '1 / 1'
-        }}
-      >
+      <div className="produkt-image-container">
         <Slideshow
           images={produkt.images}
           time={1000000}
