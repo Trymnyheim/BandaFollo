@@ -4,31 +4,44 @@ import Card from 'react-bootstrap/Card'
 
 function HolidayBanner() {
 
-    const {
-        isChristmas, isEaster, isSummer,
-        setIsChristmas, setIsEaster, setIsSummer }
+    const { isChristmas, isEaster, isSummer, setIsChristmas, setIsEaster, setIsSummer }
         = useContext(HolidayContext);
+
+    const imgContainerStyle = {
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        padding: '48px'
+    }
+    const cardStyle = {
+        maxWidth: '600px',
+        margin: '12px auto'
+    }
+    const imageStyle = {
+        width: '100%',
+        maxWidth: '500px'
+    }
 
     return (
         <>
             {isChristmas &&
-                <Card style={{backgroundColor: 'rgba(168, 202, 171, 1)', maxWidth: '600px', margin: '12px auto'}}>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '48px'}}>
-                        <img style={{ width: '100%', maxWidth: '500px'}} src='/images/decor/christmas-greeting.png' />
+                <Card style={{...cardStyle, backgroundColor: 'rgba(168, 202, 171, 1)'}}>
+                    <div style={imgContainerStyle}>
+                        <img src='/images/decor/christmas-greeting.png' style={imageStyle}  />
                     </div>
                 </Card>
             }
             {isEaster && 
-                <Card style={{backgroundColor: 'rgba(197, 202, 168, 1)', margin: '12px'}}>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '48px'}}>
-                        <img style={{ width: '100%', maxWidth: '500px'}} src='/images/decor/easter-greeting.png' />
+                <Card style={{...cardStyle, backgroundColor: 'rgba(197, 202, 168, 1)'}}>
+                    <div style={imgContainerStyle}>
+                        <img src='/images/decor/easter-greeting.png' style={imageStyle} />
                     </div>
                 </Card>
             }
             {isSummer && 
-                <Card style={{backgroundColor: 'rgba(124, 158, 111, 1)', margin: '12px auto', maxWidth: '500px'}}>
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', padding: '48px'}}>
-                        <img style={{ width: '100%', maxWidth: '500px'}} src='/images/decor/summer-greeting.png' />
+                <Card style={{...cardStyle, backgroundColor: 'rgba(124, 158, 111, 1)'}}>
+                    <div style={imgContainerStyle}>
+                        <img src='/images/decor/summer-greeting.png' style={imageStyle} />
                     </div>
                 </Card>
             }

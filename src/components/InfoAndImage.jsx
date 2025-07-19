@@ -1,6 +1,5 @@
 
-function InfoAndImage({ title, image, children, colored, center, 
-    bordered }) {
+function InfoAndImage({ title, image, children, colored, center, bordered }) {
 
     return (
         <div className={`container info-and-image 
