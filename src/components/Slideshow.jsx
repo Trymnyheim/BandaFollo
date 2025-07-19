@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import './components.css';
 
 function Slideshow(props) {
+    
     const [currentIndex, setCurrentIndex] = useState(0);
     const [showArrows] = useState(
         props.withArrows && (props.images?.length || 0) > 1

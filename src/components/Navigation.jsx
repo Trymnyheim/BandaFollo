@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import Shop from './Shop.jsx';
 
 function Navigation() {
+    
     const [showShop, setShowShop] = useState(false);
     const [expanded, setExpanded] = useState(false);
     const scrollWithOffset = useScrollWithOffset();

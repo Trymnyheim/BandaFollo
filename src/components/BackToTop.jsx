@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import Button from "react-bootstrap/Button";
 
 function BackToTop({ text }) {
+    
     const buttonRef = useRef(null);
     const [isSticky, setIsSticky] = useState(false);
     const [originalTop, setOriginalTop] = useState(null);

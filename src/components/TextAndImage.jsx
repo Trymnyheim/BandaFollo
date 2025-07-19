@@ -1,3 +1,4 @@
+
 function TextAndImage({ id, title, text, image, left }) {
     return (
         <div id={id} className={`text-and-image ${left ? 'left' : 'right'}`}>
@@ -11,7 +12,5 @@ function TextAndImage({ id, title, text, image, left }) {
         </div>
     );
 }
-
-
 
 export default TextAndImage;
