@@ -12,7 +12,11 @@ function Navigation() {
     const [expanded, setExpanded] = useState(false);
     const scrollWithOffset = useScrollWithOffset();
 
-    const handleCloseShop = () => setTimeout(() => setShowShop(false), 0);
+    const handleCloseShop = () => setTimeout(() => {
+            setShowShop(false);
+            setExpanded(false);
+        }, 0);
+        
     const handleShowShop = () => setShowShop(true);
 
     const handleSelect = () => {
