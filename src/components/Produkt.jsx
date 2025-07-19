@@ -25,11 +25,7 @@ function Produkt({ produkt, id, children}) {
                 ))}
             </div>
             <div className="produkt-image-container">
-                <Slideshow
-                images={produkt.images}
-                withArrows={true}
-                contain
-                />
+                <Slideshow images={produkt.images} withArrows={true} contain />
             </div>
             <div className="container justify-center padding">
                 {children}
