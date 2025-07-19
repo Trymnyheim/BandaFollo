@@ -1,4 +1,4 @@
-import TextAndImage from "../components/TextAndImage";
+import InfoAndImage from "../components/InfoAndImage.jsx";
 
 function Tjenester() {
 
@@ -9,7 +9,7 @@ function Tjenester() {
 
     const leveringText = [
         "Varer kan hentes i vår butikk, men vi tilbyr også gratis hjemmelevering etter avtale.",
-        "Husk alltid å være ute i god tid med varebestilling så du ikke går tom for nødvendige hjelpemidler."
+        "Husk alltid å være ute i god tid med varebestilling, spesielt rundt høytider, så du ikke går tom for nødvendige hjelpemidler."
     ]
 
     const veiledningText = [
@@ -19,10 +19,22 @@ function Tjenester() {
     ]
 
     return (
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '46px' }}>
-            <TextAndImage id="hjemmebesok" title="Hjemmebesøk" text={hjemmeText} image="/images/test.jpg" />
-            <TextAndImage id="levering" title="Levering" text={leveringText} image="/images/test.jpg" left={true} />
-            <TextAndImage id="veiledning" title="Råd og Veiledning" text={veiledningText} image="/images/test.jpg" />
+        <div className="info-and-image-container">
+            <InfoAndImage title="Hjemmebesøk" bordered>
+                {hjemmeText.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                ))}
+            </InfoAndImage>
+            <InfoAndImage title="Levering" bordered>
+                {leveringText.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                ))}
+            </InfoAndImage>
+            <InfoAndImage title="Veiledning" bordered>
+                {veiledningText.map((paragraph, index) => (
+                    <p key={index}>{paragraph}</p>
+                ))}
+            </InfoAndImage>
         </div>
     )
 }

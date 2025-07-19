@@ -8,7 +8,8 @@ function Kontakt() {
         flexWrap: "wrap",
         gap: "24px", 
         margin: "auto",
-        maxWidth: '350px'
+        maxWidth: '350px',
+        justifyContent: 'center'
     }
 
     const contactStyle = {

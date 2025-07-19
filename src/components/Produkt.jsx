@@ -28,12 +28,17 @@ function Produkt({ produkt, id, children}) {
 
       </div>
 
-      <div style={{...containerStyle, border: 'solid 1px rgba(209, 209, 209, 1)'}} >
+      <div style={{
+          flex: '1 0 auto',       // allow resizing
+          width: '300px',         // or any percentage you want
+          border: '1px solid rgba(209, 209, 209, 1)',
+          aspectRatio: '1 / 1'
+        }}
+      >
         <Slideshow
           images={produkt.images}
           time={1000000}
           withArrows={true}
-          height='50'
           contain
         />
       </div>

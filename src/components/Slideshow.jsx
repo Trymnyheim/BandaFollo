@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 
 function Slideshow(props) {
     const [currentIndex, setCurrentIndex] = useState(0);
-    const [showArrows, setShowArrows] = useState(
+    const [showArrows] = useState(
             props.withArrows && (props.images?.length || 0) > 1
         );
 
@@ -82,6 +82,7 @@ function Slideshow(props) {
     };
 
     useEffect(() => {
+        if (!props.time) return;
         const interval = setInterval(() => {
             goToNext();
         }, props.time);

@@ -8,8 +8,8 @@ function OmOss() {
     const scrollWithOffset = useScrollWithOffset();
 
     const images = [
-        {url: "/images/raad_veiledning.jpg"},
-        {url: "/images/test.jpg"}
+        {url: "/images/butikk/BF-butikk.jpg"},
+        {url: "/images/butikk/butikk-sko.jpg"},
     ]
 
     return (
@@ -78,6 +78,7 @@ function OmOss() {
                     </p>
                 </InfoAndImage>
             </div>
+            <hr/>
             <div className="padding center" style={{maxWidth: '700px', margin: 'auto'}}>
                 <h3 style={{textAlign: 'center'}}>Du er hjertelig velkommen!</h3>
                 <p>Hvis du ønsker å få en forsmak på hvordan det ser ut hos oss, så har vi satt sammen en liten digital omvisning nedenfor. Stikk gjerne innom om du ønsker å se mer eller&nbsp;
@@ -87,8 +88,15 @@ function OmOss() {
                     hvis det er noe du lurer på.
                 </p>
             </div>
-            <div style={{width: '100%', border: 'solid 1px rgba(209, 209, 209, 1)'}}>
-                <Slideshow images={images} time={10000} withArrows={true} height="65" contain/>
+            <div style={{
+                flex: '1 0 auto',
+                maxHeight: '80vh',
+                border: '1px solid rgba(209, 209, 209, 1)',
+                aspectRatio: '3 / 2',
+                margin: '0 auto'
+                }}
+            >
+                <Slideshow images={images} withArrows={true} contain/>
             </div>
         </>
     )
