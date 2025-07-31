@@ -1,52 +1,50 @@
 import { useContext, useEffect, useState } from 'react';
 import { HolidayContext } from '../utils/HolidayContext';
 import Card from 'react-bootstrap/Card'
-import hours from '../utils/hours.json';
 
 function Hours({ children }) {
 
-    const [holiday, setHoliday] = useState(null);
+    const [title, setTitle] = useState('');
+    const [image, setImage] = useState('');
 
     const {
-        isChristmas, isEaster, isSummer,
-        setIsChristmas, setIsEaster, setIsSummer }
+            selectedHoliday, hours }
         = useContext(HolidayContext);
 
-    useEffect(() => {
-        if (isChristmas) {
-            setHoliday(hours.christmas);
-        } else if (isEaster) {
-            setHoliday(hours.easter);
-        } else if (isSummer) {
-            setHoliday(hours.summer);
-        } else {
-            setHoliday(null);
+    const setHoliday = () => {
+        if (selectedHoliday === 'christmas') {
+            setTitle('julen');
+            setImage('/images/decor/christmas.png');
+        } else if (selectedHoliday === 'easter') {
+            setTitle('påsken');
+            setImage('/images/decor/easter.png');
+        } else if (selectedHoliday === 'summer') {
+            setTitle('sommer');
+            setImage('/images/decor/summer.png');
         }
-    }, [isChristmas, isEaster, isSummer]);
+    }
 
-    const capitalize = (str) => {
-        if (!str)
-            return "";
-        return str.charAt(0).toUpperCase() + str.slice(1);
-    };
+    useEffect(() => setHoliday, []);
+    useEffect(() => setHoliday), [selectedHoliday];
 
     return (
         <Card>
             <Card.Body>
                 <Card.Title className="bold" >Åpningstider</Card.Title>
                     {children}
-                    {holiday &&
-                        <div className={`holiday-hours ${holiday.title}`}>
+                    {(selectedHoliday && hours.length !== 0) &&
+                        <div className={`holiday-hours ${selectedHoliday}`}>
                             <br/>
                             <Card.Title className="bold">
-                                {capitalize(holiday.title)} {hours.year}
+                                Åpningstider i {title}
                             </Card.Title>
                             <ul>
-                                {holiday.times.map((val, index) => (
-                                    <li key={index}>{val}</li>
+                                {hours.map((val, index) => (
+                                    <li key={index}>{val.day}: {val.time}</li>
                                 ))}
-                                <img src={holiday.img} />
+                                <img src={image} />
                             </ul>
+                            <p>Pass på å bestill varene du trenger i ferien i god tid!</p>
                         </div>
                     }
             </Card.Body>

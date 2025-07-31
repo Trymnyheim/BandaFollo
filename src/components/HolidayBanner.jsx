@@ -4,7 +4,7 @@ import Card from 'react-bootstrap/Card'
 
 function HolidayBanner() {
 
-    const { isChristmas, isEaster, isSummer, setIsChristmas, setIsEaster, setIsSummer }
+    const { selectedHoliday }
         = useContext(HolidayContext);
 
     const imgContainerStyle = {
@@ -24,21 +24,21 @@ function HolidayBanner() {
 
     return (
         <>
-            {isChristmas &&
+            {selectedHoliday === 'christmas' &&
                 <Card style={{...cardStyle, backgroundColor: 'rgba(168, 202, 171, 1)'}}>
                     <div style={imgContainerStyle}>
                         <img src='/images/decor/christmas-greeting.png' style={imageStyle}  />
                     </div>
                 </Card>
             }
-            {isEaster && 
+            {selectedHoliday === 'easter' && 
                 <Card style={{...cardStyle, backgroundColor: 'rgba(197, 202, 168, 1)'}}>
                     <div style={imgContainerStyle}>
                         <img src='/images/decor/easter-greeting.png' style={imageStyle} />
                     </div>
                 </Card>
             }
-            {isSummer && 
+            {selectedHoliday === 'summer' && 
                 <Card style={{...cardStyle, backgroundColor: 'rgba(124, 158, 111, 1)'}}>
                     <div style={imgContainerStyle}>
                         <img src='/images/decor/summer-greeting.png' style={imageStyle} />

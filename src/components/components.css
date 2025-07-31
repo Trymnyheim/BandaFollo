@@ -130,12 +130,12 @@
   width: 80%;
 }
 
-.holiday-hours.påske {
-  color: rgb(179, 101, 0);
+.holiday-hours.christmas {
+  color: rgb(148, 35, 7);
 }
 
-.holiday-hours.jul {
-  color: rgb(148, 35, 7);
+.holiday-hours.easter {
+  color: rgb(179, 101, 0);
 }
 
 .holiday-hours.sommer {
