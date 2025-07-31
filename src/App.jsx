@@ -4,6 +4,8 @@ import './components/components.css';
 import Navigation from './components/Navigation.jsx';
 import Footer from './components/Footer.jsx';
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import AppContextProvider from './utils/AppContextProvider.jsx';
+
 
 import Home from './pages/Home.jsx';
 import OmOss from './pages/OmOss.jsx';
@@ -15,20 +17,22 @@ import Ansatt from './pages/Ansatt.jsx';
 function App() {
 
   return (
-    <BrowserRouter>
-      	<Navigation />
-      	<div className="content">
-          	<Routes>
-				<Route index path='/' element={<Home />} />
-				<Route path='/omoss' element={<OmOss />} />
-				<Route path='/kontakt' element={<Kontakt />} />
-				<Route path='/produkter' element={<Produkter />} />
-				<Route path='/tjenester' element={<Tjenester />} />
-				<Route path='/ansatt' element={<Ansatt />} />
-          	</Routes>
-      	</div>
-      	<Footer />
-    </BrowserRouter>
+	<AppContextProvider>
+		<BrowserRouter>
+			<Navigation />
+			<div className="content">
+				<Routes>
+					<Route index path='/' element={<Home />} />
+					<Route path='/omoss' element={<OmOss />} />
+					<Route path='/kontakt' element={<Kontakt />} />
+					<Route path='/produkter' element={<Produkter />} />
+					<Route path='/tjenester' element={<Tjenester />} />
+					<Route path='/ansatt' element={<Ansatt />} />
+				</Routes>
+			</div>
+			<Footer />
+		</BrowserRouter>
+	</AppContextProvider>
   )
 }
 
