@@ -14,11 +14,8 @@ function HolidayProvider({ children }) {
     useEffect(() => {
         const fetchActiveHoliday = async () => {
             try {
-                const res = await fetch('http://localhost:5000/holiday/get_holiday', {
-                    headers: {
-                        Authorization: user ? `Bearer ${user.accessToken}` : undefined,
-                    },
-                });
+                const res = await fetch('http://localhost:5000/holiday/get_holiday');
+                
                 if (!res.ok) throw new Error('Kunne ikke hente aktiv feriedata');
 
                 const data = await res.json();
@@ -56,7 +53,7 @@ function HolidayProvider({ children }) {
                 method: 'POST',
                 headers: {
                     Authorization: `Bearer ${user.accessToken}`,
-                    'Content-Type': 'application/json',
+                    'Content-Type': 'application/json'
                 },
                 body: JSON.stringify({ activeHoliday: holidayToSet, hours: allHours }),
             });
