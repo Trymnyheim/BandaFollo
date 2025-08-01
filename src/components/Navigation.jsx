@@ -39,7 +39,12 @@ function Navigation() {
                     </Navbar.Brand>
                     <div>
                     <Navbar.Toggle />
-                    {user && <Button onClick={logout} className="mx-2" style={{ whiteSpace: 'nowrap' }}>Logg ut</Button>}
+                    {user &&
+                        <Button onClick={logout} className="mx-2"
+                            style={{ whiteSpace: 'nowrap' }}
+                        >
+                            Logg ut
+                        </Button>}
                     </div>
                     <Navbar.Collapse>
                         <Nav onSelect={handleSelect} className="me-auto" >                            
