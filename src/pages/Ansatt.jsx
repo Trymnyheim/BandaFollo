@@ -7,18 +7,15 @@ import Card from 'react-bootstrap/Card'
 
 function Ansatt() {
 
-    const { user, logout } = useAuth();
+    const { user } = useAuth();
 
     return (
-        <div className="m-2">
+        <div className="mx-2">
             {!user && <Login />}
             {user && (
                 <>  
-                    <div className="container">
-                        <p>{`Hei ${user.user.name}!`}</p>
-                        <Button onClick={logout}>Logg ut</Button>
-                    </div>
-                    <Card className="my-5">
+                    <h1 className="center p-5">Hei {user.user.name}!</h1>
+                    <Card>
                         <Card.Title className="bold fs-3 center mt-4">
                             Velg ferie
                         </Card.Title>
