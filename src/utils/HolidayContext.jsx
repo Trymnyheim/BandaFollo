@@ -4,8 +4,7 @@ import { useAuth } from './AuthContext.jsx';
 export const HolidayContext = createContext();
 
 function HolidayProvider({ children }) {
-    const { user } = useAuth();
-
+    const { user, logout } = useAuth();
     const [selectedHoliday, setSelectedHoliday] = useState('');
     const [hours, setHours] = useState([]);
     const [allHours, setAllHours] = useState({}); // for admin
@@ -58,6 +57,11 @@ function HolidayProvider({ children }) {
                 body: JSON.stringify({ activeHoliday: holidayToSet, hours: allHours }),
             });
 
+            if (res.status === 401 || res.status === 403) {
+                logout();
+                return;
+            }
+
             if (!res.ok) {
                 const err = await res.json();
                 return { success: false, message: err?.error || 'Noe gikk galt' };
@@ -85,6 +89,11 @@ function HolidayProvider({ children }) {
                     Authorization: `Bearer ${user.accessToken}`,
                 },
             });
+
+            if (res.status === 401 || res.status === 403) {
+                logout();
+                return;
+            }
 
             if (!res.ok) throw new Error('Kunne ikke hente ferieliste');
 
