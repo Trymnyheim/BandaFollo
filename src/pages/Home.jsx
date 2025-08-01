@@ -1,6 +1,6 @@
 import Icons from '../components/Icons.jsx';
 import Slideshow from '../components/Slideshow.jsx';
-import Commercials from '../components/Commercials.jsx';
+import Commercials from '../components/commercials/Commercials.jsx';
 import Title from '../components/Title.jsx';
 import HolidayBanner from '../components/HolidayBanner.jsx';
 

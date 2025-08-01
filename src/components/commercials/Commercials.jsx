@@ -1,4 +1,4 @@
-import { useCommercial } from '../utils/CommercialContext.jsx';
+import { useCommercial } from '../../utils/CommercialContext.jsx';
 import Commercial from './Commercial.jsx';
 
 function Commercials() {
