@@ -1,4 +1,7 @@
-function Campaign({campaign}) {
+
+function Commercial({ commercial }) {
+    
+    const {title, text, disclaimer, image} = commercial;
 
     const campaignContainer = {
         display: "flex",
@@ -18,14 +21,14 @@ function Campaign({campaign}) {
 
     return(
         <div className="light" style={campaignContainer}>
-            <img src={campaign.img} style={imageStyle} />
+            <img src={`http://localhost:5000/uploads/commercial/${image}`} style={imageStyle} />
             <div style={textStyle}>
-                <h2>{campaign.title}</h2>
-                <p>{campaign.text}</p>
-                <p className="bold">{campaign.disclaimer}</p>
+                <h2>{title}</h2>
+                <p>{text}</p>
+                <p className="bold">{disclaimer}</p>
             </div>
         </div>
     )
 }
 
-export default Campaign;
+export default Commercial;
