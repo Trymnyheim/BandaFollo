@@ -6,8 +6,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Container from 'react-bootstrap/Container';
 import Shop from './Shop.jsx';
+import Button from 'react-bootstrap/Button';
+import { useAuth } from '../utils/AuthContext.jsx';
 
 function Navigation() {
+
+    const {user, logout } = useAuth();
     
     const [showShop, setShowShop] = useState(false);
     const [expanded, setExpanded] = useState(false);
@@ -27,13 +31,21 @@ function Navigation() {
     return (
         <>
             <Navbar expanded={expanded} onToggle={setExpanded}
-                expand="lg" sticky="top" bg="light" data-bs-theme="light"
+                expand="xl" sticky="top" bg="light" data-bs-theme="light"
             >
                 <Container>
                     <Navbar.Brand href="/">
                         <img className="logo" src="/images/logo/bandafollo.svg"/>
                     </Navbar.Brand>
+                    <div>
                     <Navbar.Toggle />
+                    {user &&
+                        <Button onClick={logout} className="mx-2"
+                            style={{ whiteSpace: 'nowrap' }}
+                        >
+                            Logg ut
+                        </Button>}
+                    </div>
                     <Navbar.Collapse>
                         <Nav onSelect={handleSelect} className="me-auto" >                            
                             <Nav.Link href="/omoss">OM OSS</Nav.Link>
@@ -62,6 +74,7 @@ function Navigation() {
                             </NavDropdown>
                             <Nav.Link href="/produkter">PRODUKTER</Nav.Link>
                             <Nav.Link onClick={handleShowShop}>NETTBUTIKK</Nav.Link>
+                            {user && <Nav.Link href="/ansatt">FOR ANSATTE</Nav.Link>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

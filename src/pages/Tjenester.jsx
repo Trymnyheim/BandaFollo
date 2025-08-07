@@ -20,21 +20,24 @@ function Tjenester() {
 
     return (
         <div className="info-and-image-container">
-            <InfoAndImage title="Hjemmebesøk" bordered>
+            <InfoAndImage title="Hjemmebesøk" >
                 {hjemmeText.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
             </InfoAndImage>
-            <InfoAndImage title="Levering" bordered>
+            <img src="/images/raad_veiledning.jpg" style={{width: '100%'}} />
+            <InfoAndImage title="Levering" >
                 {leveringText.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
             </InfoAndImage>
-            <InfoAndImage title="Veiledning" bordered>
+            <img src="/images/raad_veiledning.jpg" style={{width: '100%'}} />
+            <InfoAndImage title="Veiledning" >
                 {veiledningText.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
             </InfoAndImage>
+            <img src="/images/TEMP-hjemmebesøk.png" style={{width: '100%'}} />
         </div>
     )
 }
