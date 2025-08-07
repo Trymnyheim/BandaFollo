@@ -21,7 +21,7 @@ function Commercial({ commercial }) {
 
     return(
         <div className="light" style={campaignContainer}>
-            <img src={`http://localhost:5000/uploads/commercial/${image}`} style={imageStyle} />
+            <img src={`https://api.bandafollo.no/uploads/commercial/${image}`} style={imageStyle} />
             <div style={textStyle}>
                 <h2>{title}</h2>
                 <p>{text}</p>
