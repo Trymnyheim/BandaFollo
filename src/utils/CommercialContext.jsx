@@ -13,7 +13,7 @@ export function CommercialProvider({ children }) {
 
     const fetchCommercials = async () => {
         try {
-            const res = await fetch('http://localhost:5000/commercial/get_commercials');
+            const res = await fetch('https://api.bandafollo.no/commercial/get_commercials');
 
             if (!res.ok) {
                 throw new Error(`Kunne ikke hente reklamedata fra server (${res.status})`);
@@ -41,7 +41,7 @@ export function CommercialProvider({ children }) {
             if (commercial.image)
                 formData.append('image', commercial.image);
 
-            const res = await fetch('http://localhost:5000/commercial/add_commercial', {
+            const res = await fetch('https://api.bandafollo.no/commercial/add_commercial', {
                 method: 'POST',
                 headers: {
                     Authorization: `Bearer ${user.accessToken}`
@@ -73,7 +73,7 @@ export function CommercialProvider({ children }) {
 
     const removeCommercial = async (title) => {
         try {
-            const res = await fetch('http://localhost:5000/commercial/remove_commercial', {
+            const res = await fetch('https://api.bandafollo.no/commercial/remove_commercial', {
                 method: 'POST',
                 headers: {
                     Authorization: `Bearer ${user.accessToken}`,

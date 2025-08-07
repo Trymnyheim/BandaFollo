@@ -14,7 +14,8 @@ function HolidayBanner() {
         padding: '48px'
     }
     const cardStyle = {
-        maxWidth: '600px',
+        maxWidth: '400px',
+        maxHeight: '300px',
         margin: '12px auto'
     }
     const imageStyle = {

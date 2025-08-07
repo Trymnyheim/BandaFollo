@@ -20,7 +20,7 @@ export function AuthProvider({ children }) {
     if (storedUser) {
       const parsed = JSON.parse(storedUser);
 
-      fetch('http://localhost:5000/user/validate', {
+      fetch('https://api.bandafollo.no/user/validate', {
         method: 'GET',
         headers: {
           Authorization: `Bearer ${parsed.accessToken}`,

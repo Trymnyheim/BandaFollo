@@ -13,7 +13,7 @@ function HolidayProvider({ children }) {
     useEffect(() => {
         const fetchActiveHoliday = async () => {
             try {
-                const res = await fetch('http://localhost:5000/holiday/get_holiday');
+                const res = await fetch('https://api.bandafollo.no/holiday/get_holiday');
                 
                 if (!res.ok) throw new Error('Kunne ikke hente aktiv feriedata');
 
@@ -48,7 +48,7 @@ function HolidayProvider({ children }) {
 
         try {
             console.log(JSON.stringify({ activeHoliday: holidayToSet, hours: allHours }));
-            const res = await fetch('http://localhost:5000/holiday/set_holiday', {
+            const res = await fetch('https://api.bandafollo.no/holiday/set_holiday', {
                 method: 'POST',
                 headers: {
                     Authorization: `Bearer ${user.accessToken}`,
@@ -84,7 +84,7 @@ function HolidayProvider({ children }) {
         if (!user) return null;
 
         try {
-            const res = await fetch('http://localhost:5000/holiday/get_holidays', {
+            const res = await fetch('https://api.bandafollo.no/holiday/get_holidays', {
                 headers: {
                     Authorization: `Bearer ${user.accessToken}`,
                 },

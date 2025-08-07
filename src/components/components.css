@@ -117,7 +117,7 @@
 
 
 .image-card {
-  max-width: 400px;
+  flex: 1 1 400px;
 }
 
 
