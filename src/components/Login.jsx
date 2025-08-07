@@ -21,7 +21,7 @@ function Login() {
         if (!nameVal || !passVal)
             return;
         try {
-            const res = await fetch('http://localhost:5000/user/login', {
+            const res = await fetch('https://api.bandafollo.no/user/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
