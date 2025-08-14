@@ -8,10 +8,13 @@ The requirements for the development was mostly for a static website showcasing 
 
 ## About the project
 
+Still under development.
+[See the current state of the webpage here](https://bandafollo.netlify.app)
+
 ### Design
 Since the average customers are older and might suffer from health issues, the main focus of the design is that it is simple and user-friendly, responsive (to support resizing) and has sufficient contrast.
 
-### Technology
+### Frontend
 The website is created as a React application, utilizing bootstrap for styling. It is hosted on Netlify.
 
 ### Backend
