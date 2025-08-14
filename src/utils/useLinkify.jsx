@@ -1,13 +1,11 @@
 import { useMemo } from "react";
+import { Link } from "react-router-dom";
 
 export default function useLinkify(text) {
   return useMemo(() => {
     if (typeof text !== "string") return text;
 
-    // This regex matches:
-    // Group 1: URL starting with http(s):// or www.
-    // Optional Group 3: link text inside ::"link text"
-    const regex = /(https?:\/\/[^\s":]+|www\.[^\s":]+)(::"([^"]+)")?/g;
+    const regex = /(https?:\/\/[^\s":]+|www\.[^\s":]+|\/\/[^\s":]+)(::"([^"]+)")?/g;
 
     const elements = [];
     let lastIndex = 0;
@@ -15,27 +13,48 @@ export default function useLinkify(text) {
 
     while ((match = regex.exec(text)) !== null) {
       const url = match[1];
-      const label = match[3]; // the link text inside quotes, if present
+      const label = match[3];
       const index = match.index;
 
-      // Add any text before the URL
       if (index > lastIndex) {
         elements.push(text.slice(lastIndex, index));
       }
 
-      // Normalize url, add https:// if missing
-      const href = url.startsWith("www.") ? `https://${url}` : url;
+      if (url.startsWith("//")) {
+        const internalRoute = url.slice(1);
 
-      elements.push(
-        <a key={index} href={href} target="_blank" className="link">
-          {label || url}
-        </a>
-      );
+        const handleClick = () => {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+        elements.push(
+          <Link
+            key={index}
+            to={internalRoute}
+            onClick={handleClick}
+            className="link"
+          >
+            {label || internalRoute}
+          </Link>
+        );
+      } else {
+        const href = url.startsWith("www.") ? `https://${url}` : url;
+        elements.push(
+          <a
+            key={index}
+            href={href}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="link"
+          >
+            {label || url}
+          </a>
+        );
+      }
 
       lastIndex = index + match[0].length;
     }
 
-    // Add remaining text after last match
     if (lastIndex < text.length) {
       elements.push(text.slice(lastIndex));
     }

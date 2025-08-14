@@ -19,9 +19,7 @@ function Saalerogsko() {
             'Stikk gjerne innom vår butikk for å se på og prøve sko.'
         ],
         images: [
-            {url: '/images/produkter/saalerogsko/'},
-            {url: '/images/produkter/saalerogsko/'},
-            {url: '/images/produkter/saalerogsko/'}
+            {url: '/images/produkter/saalerogsko/sko-hylle.jpg'}
         ]
     }
 

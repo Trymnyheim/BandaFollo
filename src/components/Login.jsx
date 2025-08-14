@@ -47,8 +47,7 @@ function Login() {
 
     return (
         <>
-            <Form onSubmit={handleLogin}>
-                <h2>Login</h2>
+            <Form onSubmit={handleLogin} className="login">
                 <Form.Label>Brukernavn:</Form.Label>
                 <Form.Control type="text" value={name} onChange={(event) => setName(event.target.value)} ></Form.Control>
                 {!validName && <p className="error">ugyldig navn.</p>}
@@ -57,7 +56,7 @@ function Login() {
                 {!validPassword && 
                 <p className="error">Ugyldig passord.</p>}
                 <p>{errorMessage}</p>
-                <Button type='submit'>Login</Button>
+                <Button type='submit' variant="success">Login</Button>
             </Form>
         </>
     )

@@ -8,6 +8,7 @@
   --primary-dark: rgb(23, 59, 37);
   --primary-light: rgb(173, 216, 187);
   --secondary: ;
+  --gray: rgb(228, 226, 217);
   --light: rgb(255, 255, 255);
   --link: rgb(0, 116, 96);
   --link-light: rgb(194, 255, 179);
@@ -33,6 +34,9 @@ body {
   background-color: var(--primary-light);
 }
 
+.b-gray {
+  background-color: var(--gray);
+}
 
 body {
   font-size: 18px;
@@ -50,6 +54,10 @@ a {
 
 .link-light {
   color: var(--link-light) !important;
+}
+
+.link:hover, .link-light:hover {
+  cursor: pointer;
 }
 
 .bold {
@@ -70,6 +78,16 @@ a {
 
 .gap {
   gap: 24px
+}
+
+.flex-padding {
+  padding: 0 98px;
+}
+
+@media (max-width: 800px) {
+  .flex-padding {
+    padding: 0 24px;
+  }
 }
 
 .content {
@@ -105,7 +123,7 @@ a {
 @media (max-width: 400px) {
   .logo {
     width: 180px;
-}
+  }
 }
 
 .banda-logo {
@@ -149,4 +167,26 @@ backdrop-filter: blur(8px);}
 .with-arrow:hover .arrow-full {
   opacity: 1;
   z-index: 1;
+}
+
+
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.contact-card {
+  flex: 0 1 350px
+}
+
+.contact-info {
+  display: flex;
+  gap: 24px;
+  margin: 12px;
+}
+
+.mt-auto {
+  margin-top: auto;
 }

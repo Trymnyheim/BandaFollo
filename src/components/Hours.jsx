@@ -22,13 +22,20 @@ function Hours({ children }) {
             setTitle('sommer');
             setImage('/images/decor/summer.png');
         }
+        console.log(title);
     }
 
-    useEffect(() => setHoliday, []);
-    useEffect(() => setHoliday), [selectedHoliday];
+    useEffect(() => {
+        setHoliday();
+    }, []);
+
+    useEffect(() => {
+        setHoliday();
+    }, [selectedHoliday]);
+
 
     return (
-        <Card>
+        <Card className="contact-card">
             <Card.Body>
                 <Card.Title className="bold" >Åpningstider</Card.Title>
                     {children}

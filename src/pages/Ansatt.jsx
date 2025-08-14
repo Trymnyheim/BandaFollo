@@ -11,7 +11,18 @@ function Ansatt() {
 
     return (
         <div className="mx-2">
-            {!user && <Login />}
+            {!user && 
+                <>
+                    <div className="py-3 login">
+                        <h1 className="my-3 center">For ansatte</h1>
+                        <p>
+                            Innlogging kreves for å gjøre endringer på nettsiden.
+                            Ved problemer med innlogging eller behov for opprettelse av konto, ta kontakt med administrator.
+                        </p>
+                    </div>
+                    <Login />
+                </>
+            }
             {user && (
                 <>  
                     <h1 className="center p-5">Hei {user.user.name}!</h1>
