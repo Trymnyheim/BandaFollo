@@ -19,6 +19,9 @@ body {
   background-color: rgb(245, 245, 245);
 }
 
+.c-primary {
+  color: var(--primary);
+}
 
 .b-primary {
   background-color: var(--primary);
@@ -189,4 +192,43 @@ backdrop-filter: blur(8px);}
 
 .mt-auto {
   margin-top: auto;
+}
+
+
+.tjenester-container {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 48px;
+}
+
+.tjenester-section {
+  background: var(--gray);
+  padding: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.tjenester-text {
+  flex: 1 1 300px;
+}
+
+.tjenester-img {
+  max-width: 500px;
+  border-radius: 6px;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+
+  .tjenester-container {
+    padding: 12px;
+    margin-top: 24px;
+  }
+  .tjenester-img {
+    max-width: 100%;
+  }
 }
