@@ -22,7 +22,7 @@ function OmOss() {
         <>
             <img src="/images/ansatte/ansatte.jpg" style={{width: '100%'}}/>
             <div className="info-and-image-container">
-                <InfoAndImage title="Kompetanse" image="/images/raad_veiledning.jpg" large>
+                <InfoAndImage title="Kompetanse" image="/images/butikk/butikk-hylle.jpg" large>
                     <p>
                         Hos oss blir du alltid møtt av ansatte som er helsefaglig utdannet med bred kompetanse innen våre produktkategorier.
                         Gode hjelpemidler er viktig for livskvaliteten og hos oss kan du få hjelp til å finne
@@ -40,7 +40,7 @@ function OmOss() {
                         og veiledning.
                     </p>
                 </InfoAndImage>
-                <InfoAndImage title="Trygghet" image="/images/butikk/stol-avlang.jpg" large >
+                <InfoAndImage title="Trygghet" image="/images/stock2_square.jpg" large >
                     <p>
                         Vårt mål er å skape trygghet for deg som kunde og at du får den hjelpen
                         og støtten du trenger for en problemfri hverdag. Vi er derimot ikke 

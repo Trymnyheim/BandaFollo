@@ -1,5 +1,3 @@
-import InfoAndImage from "../components/InfoAndImage.jsx";
-
 function Tjenester() {
 
     const hjemmeText = [
@@ -19,26 +17,28 @@ function Tjenester() {
     ]
 
     return (
-        <div className="info-and-image-container">
-            <InfoAndImage title="Hjemmebesøk" >
+        <>
+            <div id="hjemmebesok">
+                <h1>Hjemmebesøk</h1>
                 {hjemmeText.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
-            </InfoAndImage>
-            <img src="/images/raad_veiledning.jpg" style={{width: '100%'}} />
-            <InfoAndImage title="Levering" >
+                <img src="/images/hjemmebesok.jpg" style={{maxWidth: '100%'}} />
+            </div>
+            <div id="levering">
+                <h1>Levering</h1>
                 {leveringText.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
-            </InfoAndImage>
-            <img src="/images/raad_veiledning.jpg" style={{width: '100%'}} />
-            <InfoAndImage title="Råd og veiledning" >
+                <img src="/images/hjemkjoring.jpg" style={{maxWidth: '100%'}} />
+            </div>
+            <div id="veiledning">
+                <h1>Råd og veiledning</h1>
                 {veiledningText.map((paragraph, index) => (
                     <p key={index}>{paragraph}</p>
                 ))}
-            </InfoAndImage>
-            <img src="/images/TEMP-hjemmebesøk.png" style={{width: '100%'}} />
-        </div>
+            </div>
+        </>
     )
 }
 

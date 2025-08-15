@@ -17,7 +17,7 @@ function ImageCard({ image, title, text, buttons, imageBottom }) {
         </Card.Body>
         <div className="container mt-auto mb-3">
           {buttons?.map((button, index) => (
-            <Button key={index} variant="primary" onClick={button.action}>
+            <Button key={index} variant="success" onClick={button.action}>
               {button.text}
             </Button>
           ))}

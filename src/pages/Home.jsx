@@ -31,7 +31,7 @@ function Home() {
                     action: () => {navigate('/kontakt'); setTimeout(() => window.scrollTo(0, 0), 50);}
                 }
             ],
-            image: '/images/butikk/butikk.jpg'
+            image: '/images/stock1_wide.png'
         },
         {
             title: 'Vi hjelper deg',
@@ -45,7 +45,7 @@ function Home() {
                     action: () => {navigate('/kontakt'); setTimeout(() => window.scrollTo(0, 0), 50);}
                 }
             ],
-            image: '/images/butikk/butikk.jpg'
+            image: '/images/strompetilpasning.jpg'
         }
     ]
 
