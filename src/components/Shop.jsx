@@ -16,7 +16,7 @@ function Shop({ showShop, handleCloseShop }) {
                 </Modal.Header>
                 <Modal.Body>
                     <p>Du blir nå videreført til Banda's nettbutikk.</p>
-                    <p>For å få varene leverte fra oss, velg BandaFollo ved betaling.</p>
+                    <p>For å få varene levert av oss, velg Banda Follo AS før betaling.</p>
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleCloseShop}>Lukk</Button>

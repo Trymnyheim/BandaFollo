@@ -1,7 +1,7 @@
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 
-function ImageCard({ image, title, text, button, imageBottom }) {
+function ImageCard({ image, title, text, buttons, imageBottom }) {
 
   return (
     <Card className="image-card">
@@ -14,12 +14,14 @@ function ImageCard({ image, title, text, button, imageBottom }) {
         {Array.isArray(text) && text.map((paragraph, index) => (
             <Card.Text key={index}>{paragraph}</Card.Text>
         ))}
-        {button && (
-          <Button variant="primary" onClick={button.action}>
-            {button.text}
-          </Button>
-        )}
-      </Card.Body>
+        </Card.Body>
+        <div className="container mt-auto mb-3">
+          {buttons?.map((button, index) => (
+            <Button key={index} variant="success" onClick={button.action}>
+              {button.text}
+            </Button>
+          ))}
+        </div>
       {imageBottom && <Card.Img variant="bottom" src={imageBottom} />}
     </Card>
   );

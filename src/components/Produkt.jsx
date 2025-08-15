@@ -16,13 +16,14 @@ function Produkt({ produkt, id, children}) {
                     <Fragment key={index}>{linked}</Fragment>
                 ))}
                 <ul>
-                    {produkt.subProducts.map((subProduct, index) => (
+                    {produkt.subProducts?.map((subProduct, index) => (
                         <li key={index}>{subProduct}</li>
                     ))}
                 </ul>
                 {linkedUnderText.map((linked, index) => (
                     <Fragment key={index}>{linked}</Fragment>
                 ))}
+                {useLinkify('Hvis du har spørsmål eller ønsker å bestille varer, //kontakt::"ta kontakt".')}
             </div>
             <div className="produkt-image-container">
                 <Slideshow images={produkt.images} withArrows={true} contain />

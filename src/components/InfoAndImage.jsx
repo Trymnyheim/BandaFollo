@@ -1,9 +1,9 @@
 
-function InfoAndImage({ title, image, children, colored, center, bordered }) {
+function InfoAndImage({ title, image, children, colored, center, bordered, large }) {
 
     return (
         <div className={`container info-and-image 
-            ${colored ? 'b-primary' : 'b-primary-light'} 
+            ${colored ? 'b-primary' : 'b-gray'} 
             ${center ? 'center' : ''} 
             ${bordered ? 'info-and-image-bordered' : ''}
         `}>

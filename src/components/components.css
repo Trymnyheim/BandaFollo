@@ -1,4 +1,10 @@
 
+.login {
+  max-width: 500px;
+  margin: auto;
+  padding: 24px;
+}
+
 .info-and-image-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -8,6 +14,7 @@
 
 .info-and-image {
   flex: 1 1 600px;
+  max-width: 600px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -44,14 +51,14 @@
 
 
 .nav-card {
-  flex: 0 1 400px;
+  flex: 1 1 400px;
   background-color: rgb(248, 248, 248);
   transition: filter 0.5s;
 }
 
 .nav-card img {
-  height: 12rem;
-  width: 16rem;
+  height: 10rem;
+  width: 16.5rem;
   object-fit: contain;
   border: solid 1px rgb(214, 214, 214);
   background-color: white;
@@ -131,15 +138,15 @@
 }
 
 .holiday-hours.christmas {
-  color: rgb(148, 35, 7);
+  color: rgb(119, 27, 4);
 }
 
 .holiday-hours.easter {
-  color: rgb(179, 101, 0);
+  color: #b36500;
 }
 
-.holiday-hours.sommer {
-  color: rgb(3, 104, 0);
+.holiday-hours.summer {
+  color: rgb(5, 102, 2);
 }
 
 
