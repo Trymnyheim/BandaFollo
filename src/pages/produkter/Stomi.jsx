@@ -11,7 +11,16 @@ function Stomi() {
         ],
         subProducts: [],
         images: [
-            {url: '/images/produkter/stomi/salt_uro.png'}
+            {url: '/images/produkter/stomi/salt_uro.png'},
+            {url: '/images/produkter/stomi/esenta.webp'},
+            {url: '/images/produkter/stomi/irrigasjon.webp'},
+            {url: '/images/produkter/stomi/stomi-junior-pige-web.jpg'},
+            {url: '/images/produkter/stomi/nattpose.webp'},
+            {url: '/images/produkter/stomi/NovaLife_EasiView.jpg'},
+            {url: '/images/produkter/stomi/pasta.webp'},
+            {url: '/images/produkter/stomi/plate_hollister.webp'},
+            {url: '/images/produkter/stomi/salts_barrierefilm_2020.jpg'},
+            {url: '/images/produkter/stomi/welland_cap.webp'}
         ]
     }
 

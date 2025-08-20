@@ -13,9 +13,15 @@ function Ernaering() {
             'Vi hjelper deg gjerne i valget av ernæringsprodukter både når det gjelder behovet for innhold og smaksvarianter.'
         ],
         images: [
+            {url: '/images/produkter/ernaering/rs_protein.webp'},
             {url: '/images/produkter/ernaering/nutridrink_kompakt.webp'},
             {url: '/images/produkter/ernaering/resource_apple.webp'},
-            {url: '/images/produkter/ernaering/rs_protein.webp'}
+            {url: '/images/produkter/ernaering/ERNÆRINGSDRIKK.webp'},
+            {url: '/images/produkter/ernaering/ERNÆRINGSDRIKK2.webp'},
+            {url: '/images/produkter/ernaering/rs_fiber.jpg'},
+            {url: '/images/produkter/ernaering/rs_protein.webp'},
+            {url: '/images/produkter/ernaering/SONDEMAT.webp'},
+            {url: '/images/produkter/ernaering/SONDEMAT2.webp'}
         ]
     }
 

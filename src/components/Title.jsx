@@ -9,7 +9,7 @@ function Title({text}) {
         backgroundColor: "rgba(255, 255, 255, 0.9)",
         border: "solid 2px white",
         borderRadius: "6px",
-        marginTop: "96px"
+        marginTop: "96px",
     }
 
     const logoStyle = {
@@ -19,11 +19,11 @@ function Title({text}) {
     return (
         <div style={titleStyle}>
             <img style={logoStyle} src="/images/logo/bandafollo_man.svg"/>
-            <h4>
+            <h5>
                 {text.map((text, index) => (
                     <span key={index}>{text}<br/></span>
             ))}
-            </h4>
+            </h5>
         </div>
     )
 }

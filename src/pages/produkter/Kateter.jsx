@@ -17,9 +17,13 @@ function Kateter() {
             'Vår uroterapeut (urologisk sykepleier) kan bistå med valg av utstyr, gode råd og opplæring i bruk av kateter.'
         ],
         images: [
-            {url: '/images/produkter/kateter/'},
-            {url: '/images/produkter/kateter/'},
-            {url: '/images/produkter/kateter/'}
+            {url: '/images/produkter/kateter/lofric_elle.png'},
+            {url: '/images/produkter/kateter/lofric_origo.webp'},
+            {url: '/images/produkter/kateter/urinpose.jpg'},
+            {url: '/images/produkter/kateter/vapro_pocket.webp'},
+            {url: '/images/produkter/kateter/aquacath_soft.png'},
+            {url: '/images/produkter/kateter/aquaflate_perm.png'},
+            {url: '/images/produkter/kateter/ventil.png'},
         ]
     }
 
