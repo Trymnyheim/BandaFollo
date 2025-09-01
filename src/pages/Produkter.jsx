@@ -53,7 +53,7 @@ function Produkter() {
         },
         {
             title: "Brystproteser",
-            image: "/images/produkter/brystproteser/brystproteser5.jpg",
+            image: "/images/produkter/brystproteser/diamond_attach.jpg",
             page: Brystproteser,
             url: "/produkter#brystproteser"
         },
@@ -65,7 +65,7 @@ function Produkter() {
         },
         {
             title: "Kompresjonstøy/strømper",
-            image: "/images/produkter/kompresjonstoy/strompe.webp",
+            image: "/images/produkter/kompresjonstoy/active_black.webp",
             page: Kompresjonstoy,
             url: "/produkter#kompresjonstoy"
         },

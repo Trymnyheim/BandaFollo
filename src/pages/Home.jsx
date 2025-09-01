@@ -11,7 +11,7 @@ function Home() {
     const navigate = useNavigate();
 
     const images = [
-        {url: '/images/butikk/butikk.jpg'}
+        {url: '/images/banner.png'}
     ]
 
     const cards = [

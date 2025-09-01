@@ -17,8 +17,15 @@ function Inkontinens() {
         ],
         underText: [],
         images: [
+            {url: '/images/produkter/inkontinens/tena_sil_washable2.jpg'},
             {url: '/images/produkter/inkontinens/black-low-waist.jpg'},
-            {url: '/images/produkter/inkontinens/creme-high-waist.jpg'}
+            {url: '/images/produkter/inkontinens/creme-high-waist.jpg'},
+            {url: '/images/produkter/inkontinens/diveen_box.png'},
+            {url: '/images/produkter/inkontinens/tena-men.png'},
+            {url: '/images/produkter/inkontinens/navina.webp'},
+            {url: '/images/produkter/inkontinens/tena_sil_high.png'},
+            {url: '/images/produkter/inkontinens/tena_sil_low.jpg'},
+            {url: '/images/produkter/inkontinens/tena_sil_washable.png'}
         ]
     }
 

@@ -10,9 +10,13 @@ function Brokkbelter() {
         ],  
         underText: [],
         images: [
-            {url: '/images/produkter/brokkbelter/'},
-            {url: '/images/produkter/brokkbelter/'},
-            {url: '/images/produkter/brokkbelter/'}
+            {url: '/images/produkter/brokkbelter/stomibas2.jpg'},
+            {url: '/images/produkter/brokkbelter/balder_enkel.jpg'},
+            {url: '/images/produkter/brokkbelter/beige_easy.jpg'},
+            {url: '/images/produkter/brokkbelter/brokktruse.jpg'},
+            {url: '/images/produkter/brokkbelter/brokktruse.jpg'},
+            {url: '/images/produkter/brokkbelter/freija_brokk.webp'},
+            {url: '/images/produkter/brokkbelter/stomi_bas.jpg'}
         ]
     }
 
