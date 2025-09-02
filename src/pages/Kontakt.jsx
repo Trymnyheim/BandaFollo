@@ -32,7 +32,6 @@ function Kontakt() {
                             <p>Oppegårdveien 2B, 1423 Ski</p>
                         </div>
                     </Card.Body>
-                    <Card.Img src="/images/butikk/stol-avlang.jpg" variant="bottom" />
                 </Card>
                 <Card className="contact-card">
                     <Card.Body>  
