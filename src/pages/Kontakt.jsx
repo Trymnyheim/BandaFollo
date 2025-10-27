@@ -51,7 +51,7 @@ function Kontakt() {
                         <li>Lørdag - Søndag: Stengt</li>
                     </ul>
                     <p>Gjelder for butikken.</p>
-                    <p>Telefontid er 09:00 - 16:00</p>
+                    <p>Vi svarer telefonen mellom 09:00 og 16:00.</p>
                 </Hours>
             </div>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2011.7216230196955!2d10.826401276920853!3d59.720820679622626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46415d1d8ead1f19%3A0x6f84efd1aade62f9!2sBanda%20Follo%20AS!5e0!3m2!1sno!2sno!4v1749665695375!5m2!1sno!2sno" width="100%" height="500" style={{border: "0"}} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>    
