@@ -58,6 +58,7 @@ function Home() {
             />
             {false && <HolidayBanner />}
             <div className="container my-3">
+                <img src="/images/jul_hos_banda.png" style={{width: "100%", maxWidth: "800px", margin: "auto"}} />
                 <Commercials />
             </div>
             <Icons />
