@@ -20,7 +20,7 @@ function OmOss() {
 
     return (
         <>
-            <img src="/images/ansatte/ansatte.jpg" style={{width: '100%'}}/>
+            <img src="/images/ansatte/ansatte-2.jpg" style={{width: '100%'}}/>
             <div className="info-and-image-container">
                 <InfoAndImage title="Kompetanse" image="/images/butikk/butikk-hylle.jpg" large>
                     <p>
