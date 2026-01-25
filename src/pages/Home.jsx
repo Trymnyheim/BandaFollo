@@ -56,6 +56,9 @@ function Home() {
                     <Title text={["Spesialforretning innen", "sykepleie- og helseartikler"]}/>
                 }
             />
+            <div className="container my-3">
+                <Commercials />
+            </div>
             {false && <HolidayBanner />}
             <Icons />
             <div className="container flex-padding justify-center my-5 gap">
